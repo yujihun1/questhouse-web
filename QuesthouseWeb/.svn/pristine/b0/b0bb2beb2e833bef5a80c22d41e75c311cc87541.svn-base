@@ -1,0 +1,106 @@
+﻿@using System.Security.Claims
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - QuesthouseWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/trumbowyg/dist/ui/trumbowyg.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/QuesthouseWeb.styles.css" asp-append-version="true" />
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <!-- ==============================
+         ★ 헤더: 네비게이션 바
+         ============================== -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container">
+                <!-- 1) 로고(브랜드) -->
+                <a class="navbar-brand pr-4" asp-controller="Home" asp-action="Index">
+                    <!-- 텍스트 대신 로고 이미지를 쓰고 싶으면 <img src="~/images/logo.png" alt="Questhouse" /> 처럼 변경 -->
+                    <img src="~/images/upload/QuestHouse 로고.png" alt="Questhouse" style="height:50px;" />
+                </a>
+
+                <!-- 2) 모바일 토글 버튼 -->
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#mainNav"
+                        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- 3) 메뉴 아이템: 가운데 정렬(가로), 메뉴 사이 간격, 호버 시 컬러 변화 -->
+                <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+                    <ul class="navbar-nav">
+                       
+                        <li class="nav-item mx-lg-2">
+                            <a class="nav-link text-dark font-weight-medium" asp-controller="Product" asp-action="Index">제품</a>
+                        </li>
+                        <li class="nav-item mx-lg-2">
+                            <a class="nav-link text-dark font-weight-medium" asp-controller="Bbs" asp-action="Index">공지사항</a>
+                        </li>
+                        <li class="nav-item mx-lg-2">
+                            <a class="nav-link text-dark font-weight-medium" asp-controller="Home" asp-action="Info">회사소개</a>
+                        </li>
+                        <li class="nav-item mx-lg-2">
+                            <a class="nav-link text-dark font-weight-medium" asp-controller="Map" asp-action="Index">오시는길</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 4) 우측: 언어 선택 + 문의하기 버튼 -->
+                <div class="d-flex align-items-center">
+                    <!-- 문의하기 버튼: 둥근 모서리, 배경색, 호버 애니메이션 등 -->
+                    <div>
+                        <a href="@Url.Action("Index", "Ask")" class="btn btn-primary btn-inquiry px-4 py-2">
+                            문의하기
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="Accont-btn">
+                            <span>반갑습니다. @User.Identity.Name 님</span>
+                            <a href="@Url.Action("Logout", "Account")" class="btn btn-primary btn-inquiry px-4 py-2">
+                                로그아웃
+                            </a>
+                        </div>
+                    }
+                    @* else
+                    {
+                        <div class="Accont-btn">
+                            <a href="@Url.Action("Login", "Account")" class="btn btn-primary btn-inquiry px-4 py-2">
+                                로그인
+                            </a>
+                        </div>
+                    } *@
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- ==============================
+         ★ 본문 영역 (각 View 결과가 여기에 들어감)
+         ============================== -->
+    <main role="main" class="flex-shrink-0">
+        <div class="container-fluid px-0">
+            @RenderBody()
+        </div>
+    </main>
+    
+
+
+    <!-- ==============================
+         ★ 푸터 영역
+		   ============================== -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/trumbowyg/dist/trumbowyg.min.js"></script>
+    <script src="~/lib/trumbowyg/dist/plugins/upload/trumbowyg.upload.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

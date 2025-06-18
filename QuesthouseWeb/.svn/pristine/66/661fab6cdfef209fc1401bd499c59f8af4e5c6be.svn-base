@@ -1,0 +1,41 @@
+﻿.map-page {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    opacity: 1 !important;
+}
+
+    .map-page.visible {
+        opacity: 1;
+    }
+
+.map-container {
+    max-width: 1080px;
+    margin: 120px auto 60px;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.map-title {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.divider {
+    width: 80px;
+    height: 2px;
+    background: #000;
+    margin: 60px auto 30px;
+}
+
+.address {
+    font-size: 1.1rem;
+    color: #444;
+}

@@ -1,0 +1,46 @@
+﻿@model QuesthouseWeb.Models.ViewModels.ProductFormViewModel
+
+@{
+    ViewData["Title"] = "제품 수정";
+}
+
+<link rel="stylesheet" href="~/css/product.css" />
+<div class="form-container">
+    <h1 class="form-title">@ViewData["Title"]</h1>
+
+    <form id="product-form" method="post" asp-controller="Product" asp-action="Edit" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">제목</label>
+            <input asp-for="Product.Name" class="form-control" type="text" value="@Model.Product.Name" />
+        </div>
+
+        <div class="form-group">
+            <label for="thumbnail">썸네일 이미지</label>
+            <input type="file" name="Thumbnail" id="thumbnail" class="form-control" accept="image/*" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Product.Div_id">제품구분</label>
+            <select asp-for="Product.Div_id" id="div_id" class="form-control">
+                <option value="">선택하세요</option>
+                @foreach (var pc in Model.ProductClass)
+                {
+                    <option value="@pc.Div_id">
+                        @pc.Div_nm
+                    </option>
+                }
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="desc">설명</label>
+            <textarea id="desc" class="form-control editor" asp-for="Product.Desc" rows="5"></textarea>
+        </div>
+
+        <div class="save-bar">
+            <button type="submit" class="submit-button">저장</button>
+        </div>
+    </form>
+</div>
+}
+

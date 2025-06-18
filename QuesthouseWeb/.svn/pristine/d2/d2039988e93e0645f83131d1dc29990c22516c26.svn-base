@@ -1,0 +1,102 @@
+﻿@model QuesthouseWeb.Models.ViewModels.ProductListViewModel
+
+@{
+    ViewData["Title"] = "제품 소개";
+}
+
+<link rel="stylesheet" href="~/css/pagination.css"/>
+<link rel="stylesheet" href="~/css/product.css" />
+<section class="hero-section" style="min-height:300px; background-image:url('/images/upload/back7.jpg');">
+    <div class="hero-overlay d-flex align-items-center justify-content-center">
+        <div class="hero-content text-center">
+            <h1 class="display-4 font-weight-bold mb-3">제품 소개</h1>
+        </div>
+    </div>
+</section>
+
+<div class="category-tabs">
+    <a class="category-tab @(Model.SelectedCategoryId == null ? "active" : "")"
+       asp-action="Index"
+       asp-route-categoryId=""
+       asp-route-page="1">전체</a>
+
+    <a class="category-tab @(Model.SelectedCategoryId == 1 ? "active" : "")"
+       asp-action="Index"
+       asp-route-categoryId="1"
+       asp-route-page="1">하드웨어</a>
+
+    <a class="category-tab @(Model.SelectedCategoryId == 2 ? "active" : "")"
+       asp-action="Index"
+       asp-route-categoryId="2"
+       asp-route-page="1">소프트웨어</a>
+
+    <a class="category-tab @(Model.SelectedCategoryId == 3 ? "active" : "")"
+       asp-action="Index"
+       asp-route-categoryId="3"
+       asp-route-page="1">기타</a>
+</div>
+
+<div class="product-list">
+    @foreach (var product in Model.Items)
+    {
+        <a asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id"
+           class="product-item-link product-entry" data-category="@product.Div_id">
+            <div class="product-item">
+                <img class="product-img"
+                     src="@Url.Content(product.Photo != null ? $"{product.Photo.Photo_path}" : "~/images/default.jpg")"
+                     alt="@product.Name 이미지"
+                     onerror="this.onerror=null; this.src='/images/default.png';" />
+
+
+                <div class="product-info">
+                    <div class="product-name">@product.Name</div>
+                    <div class="product-created">@product.Created</div>
+                </div>
+            </div>
+        </a>
+    }
+</div>
+
+<div class="pagination-wrapper">
+    @if (Model.TotalItems > Model.PageSize)
+    {
+        @if(Model.HasPreviousPage)
+        {
+            <a asp-action="Index"
+               asp-route-page="@(Model.Page - 1)"
+               asp-route-categoryId="@Model.SelectedCategoryId"
+               class="page-button">이전</a>
+        }
+        else
+        {
+            <span class="page-button disabled">이전</span>
+        }
+
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            if (i == Model.Page)
+            {
+                <span class="page-button active">@i</span>
+            }
+            else
+            {
+                <a asp-action="Index"
+                   asp-route-page="@i"
+                   asp-route-categoryId="@Model.SelectedCategoryId"
+                   class="page-button">@i</a>
+            }
+        }
+
+        @if (Model.HasNextPage)
+        {
+            <a asp-action="Index"
+               asp-route-page="@(Model.Page + 1)"
+               asp-route-categoryId="@Model.SelectedCategoryId"
+               class="page-button">다음</a>
+        }
+        else
+        {
+            <span class="page-button disabled">다음</span>
+        }
+}
+</div>

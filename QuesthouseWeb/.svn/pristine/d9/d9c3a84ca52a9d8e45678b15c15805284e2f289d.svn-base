@@ -1,0 +1,22 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace QuesthouseWeb.Controllers
+{
+	public class MapController : Controller
+	{
+
+		private readonly string _kakaoMapApiKey;
+
+		public MapController(IConfiguration configuration)
+		{
+			_kakaoMapApiKey = configuration["KakaoMap:ApiKey"];
+		}
+
+		public IActionResult Index()
+		{
+			ViewBag.KakaoMapApiKey = _kakaoMapApiKey;
+
+			return View();
+		}
+	}
+}

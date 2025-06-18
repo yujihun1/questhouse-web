@@ -1,0 +1,3 @@
+﻿@using QuesthouseWeb
+@using QuesthouseWeb.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

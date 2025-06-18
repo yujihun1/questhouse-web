@@ -1,0 +1,93 @@
+﻿@model QuesthouseWeb.Models.ViewModels.NewsListViewModel;
+@{
+    ViewData["Title"] = "공지사항";
+}
+
+<section class="hero-section" style="min-height:300px; background-image:url('/images/upload/back7.jpg');">
+    <div class="hero-overlay d-flex align-items-center justify-content-center">
+        <div class="hero-content text-center">
+            <h1 class="display-4 font-weight-bold mb-3">공지사항</h1>
+        </div>
+    </div>
+</section>
+
+<div class="container py-5">
+
+    @if (Model.NewsItems == null && !Model.NewsItems.Any())
+    {
+        <div class="text-center text-muted">등록된 공지사항이 없습니다.</div>
+    }
+    else
+    {
+        <div class="row gx-4 gy-4">
+            @foreach (var item in Model.NewsItems)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <!-- 썸네일 이미지 -->
+                                               <a asp-controller="Bbs" asp-action="Detail" asp-route-id="@item.Id">
+                                                     <img src="@( item.Photo != null
+                                            ? Url.Content(item.Photo.Photo_path)
+                                             : Url.Content("~/images/default.png") )"
+                                                              class="card-img-top"
+                                                              alt="@item.Title"
+                                                              style="object-fit: cover; height:180px;" />
+                            
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a asp-controller="Bbs"
+                                   asp-action="Detail"
+                                   asp-route-id="@item.Id"
+                                   class="text-dark text-decoration-none">
+                                    @item.Title
+                                </a>
+                            </h5>
+                            <p class="text-muted small mb-2">@item.Created.ToString("yyyy-MM-dd")</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+<div class="pagination-wrapper">
+    @if (Model.TotalItems > Model.PageSize)
+    {
+    @if (Model.HasPreviousPage)
+    {
+        <a asp-action="Index"
+           asp-route-page="@(Model.CurrentPage - 1)"
+           class="page-button">이전</a>
+    }
+    else
+    {
+        <span class="page-button disabled">이전</span>
+    }
+
+    @for (int i = 1; i <= Model.TotalPages; i++)
+    {
+        if (i == Model.CurrentPage)
+        {
+            <span class="page-button active">@i</span>
+        }
+        else
+        {
+            <a asp-action="Index"
+               asp-route-page="@i"
+               class="page-button">@i</a>
+        }
+    }
+
+    @if (Model.HasNextPage)
+    {
+        <a asp-action="Index"
+           asp-route-page="@(Model.CurrentPage + 1)"
+           class="page-button">다음</a>
+    }
+    else
+    {
+        <span class="page-button disabled">다음</span>
+    }
+    }
+</div>

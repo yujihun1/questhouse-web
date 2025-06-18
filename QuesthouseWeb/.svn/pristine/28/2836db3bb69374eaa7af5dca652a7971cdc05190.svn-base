@@ -1,0 +1,61 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using QuesthouseWeb.DataContext;
+using QuesthouseWeb.Models;
+using QuesthouseWeb.Models.ViewModels;
+
+public class NewsController : Controller
+{
+    private readonly AppDbContext _context;
+
+    public NewsController(AppDbContext context)
+    {
+        _context = context;
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Index()
+    {
+        var model = await _context.News.ToListAsync();
+        return View(model);
+    }
+
+    public async Task<IActionResult> Detail(int Id)
+    {
+        var data = await _context.News
+            .FirstOrDefaultAsync(p => p.Id.Equals(Id));
+
+        if (data == null)
+        {
+            return NotFound();
+        }
+        return View(data);
+    }
+
+    [HttpGet]
+    public async Task<IActionResult> Add()
+    {
+        var viewModel = new NewsFormViewModel
+        {
+            News = new News
+            {
+                Created = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
+                User_id = 1,
+                Updated = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
+            },
+        };
+
+        return View(viewModel);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Add(NewsFormViewModel viewModel)
+    {
+        var model = viewModel.News;
+
+        _context.News.Add(model);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction("Index");
+    }
+}

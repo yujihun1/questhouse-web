@@ -1,0 +1,78 @@
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using QuesthouseWeb.DataContext;
+namespace QuesthouseWeb.Controllers
+{
+    [Authorize]
+    [Route("inquiries")]
+    public class InquiriesController : Controller
+    {
+        private readonly AppDbContext _context;
+
+        public InquiriesController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: /inquiries
+        [HttpGet("")]
+        public async Task<IActionResult> Index()
+        {
+            // 문의 내역을 최신 등록일 순으로 가져옵니다.
+            var list = await _context.Inquiries
+                                     .OrderByDescending(i => i.Created)
+                                     .ToListAsync();
+            return View(list);
+        }
+
+        // GET: /inquiries/details/5
+        [HttpGet("details/{id:int}")]
+        public async Task<IActionResult> Details(int id)
+        {
+            var inquiry = await _context.Inquiries.FindAsync(id);
+            if (inquiry == null)
+            {
+                return NotFound();
+            }
+            return View(inquiry);
+        }
+
+        
+        // POST: /inquiries/delete/5
+        [HttpPost("delete/{id:int}")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var inquiry = await _context.Inquiries.FindAsync(id);
+            if (inquiry != null)
+            {
+                _context.Inquiries.Remove(inquiry);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost("toggle/{id:int}")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ToggleAnswer(int id)
+        {
+            // 해당 id의 Inquiry 레코드를 가져온 뒤 AnsYn을 반전(토글)시킵니다.
+            var inquiry = await _context.Inquiries.FindAsync(id);
+            if (inquiry == null)
+            {
+                return NotFound();
+            }
+
+            // AnsYn이 "Y"면 "N"으로, "N"이면 "Y"로 바꿔 줍니다.
+            inquiry.AnsYn = inquiry.AnsYn == "Y" ? "N" : "Y";
+
+            // 변경된 값을 DB에 저장
+            _context.Inquiries.Update(inquiry);
+            await _context.SaveChangesAsync();
+
+            // 상세 페이지로 되돌아갑니다.
+            return RedirectToAction(nameof(Details), new { id = id });
+        }
+    }
+}

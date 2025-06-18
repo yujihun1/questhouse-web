@@ -1,0 +1,82 @@
+﻿@model IEnumerable<QuesthouseWeb.Models.Inquiry>
+
+@{
+    Layout = "_Layout";   // 공통 레이아웃 사용
+    ViewData["Title"] = "문의 내역 조회";
+}
+
+<div class="container py-5">
+    <h2 class="mb-4">문의 내역 목록</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            등록된 문의가 없습니다.
+        </div>
+    }
+    else
+    {
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">이름</th>
+                    <th scope="col">이메일</th>
+                    <th scope="col">연락처</th>
+                    <th scope="col">문의 내용(미리보기)</th>
+                    <th scope="col">등록일시</th>
+                    <th scope="col">답변여부</th>
+                    <th scope="col">상세보기</th>
+                    <th scope="col">삭제</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>
+                        <td>@item.Mobile</td>
+                        <td>
+                            @{
+                                // 문의 내용을 최대 20자까지 잘라서 보여줍니다.
+                                var preview = item.Content.Length > 20
+                                ? item.Content.Substring(0, 20) + "..."
+                                : item.Content;
+                            }
+                            @preview
+                        </td>
+                        <td>@item.Created.ToString("yyyy-MM-dd HH:mm")</td>
+                        <td>
+                            @if (item.AnsYn == "Y")
+                            {
+                                <span class="badge bg-success">Y</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary">N</span>
+                            }
+                        </td>
+                        <td>
+                            <a class="btn btn-sm btn-info"
+                               asp-action="Details" asp-route-id="@item.Id">
+                                상세
+                            </a>
+                        </td>
+                        <td>
+                            <form asp-action="Delete"
+                                  asp-route-id="@item.Id"
+                                  method="post"
+                                  onsubmit="return confirm('정말 삭제하시겠습니까?');">
+                                <button type="submit" class="btn btn-sm btn-danger">
+                                    삭제
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>

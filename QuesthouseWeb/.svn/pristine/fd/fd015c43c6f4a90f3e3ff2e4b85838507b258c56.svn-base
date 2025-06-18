@@ -1,0 +1,153 @@
+﻿@model QuesthouseWeb.Models.ViewModels.ProductListViewModel
+
+@{
+    ViewData["Title"] = "제품 관리";
+}
+
+<style>
+    .notice-container {
+        max-width: 720px;
+        margin: 60px auto;
+        padding: 0 20px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .notice-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .notice-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #1c1c1c;
+    }
+
+    .add-button {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 18px;
+        font-size: 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: background 0.2s ease;
+    }
+
+        .add-button:hover {
+            background-color: #333;
+        }
+
+    .notice-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+        .notice-table th,
+        .notice-table td {
+            padding: 16px 20px;
+            font-size: 15px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .notice-table th {
+            background-color: #fafafa;
+            color: #666;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        .notice-table tr:last-child td {
+            border-bottom: none;
+        }
+
+    .action-link {
+        margin-right: 16px;
+        color: #0070f3;
+        text-decoration: none;
+    }
+
+        .action-link:hover {
+            text-decoration: underline;
+        }
+
+    .delete-button {
+        color: #e00;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+        .delete-button:hover {
+            text-decoration: underline;
+        }
+
+    .no-underline {
+        text-decoration: none;
+        color: inherit; /* 기존 텍스트 색상 유지 */
+    }
+
+</style>
+
+<div class="notice-container">
+    <div class="notice-header">
+        <h1 class="notice-title">제품 목록</h1>
+        <a asp-controller="product" asp-action="Add" class="add-button">+ 새 제품 등록</a>
+    </div>
+
+    <table class="notice-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>제품명</th>
+                <th>관리</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Items)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>
+                        <a asp-controller="Product"
+                           asp-action="Detail"
+                           asp-route-id="@product.Id"
+                           class="no-underline"
+                           data-category="@product.Div_id">
+                            @product.Name
+                        </a>
+                    </td>
+
+                    <td>
+                        <a asp-controller="product" asp-action="Edit" asp-route-id="@product.Id" class="action-link">수정</a>
+                        <button onclick="deleteProduct(@product.Id)" class="delete-button">삭제</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        async function deleteProduct(id) {
+            if (!confirm("정말 삭제하시겠습니까?")) return;
+
+            const response = await fetch(`/api/products/${id}`, {
+                method: 'DELETE'
+            });
+
+            if (response.ok) {
+                alert("삭제되었습니다.");
+                location.reload();
+            } else {
+                alert("삭제 실패");
+            }
+        }
+    </script>
+}

@@ -1,0 +1,341 @@
+/* ===================================================
+   ★ 네비게이션 바 전체 스타일
+   =================================================== */
+.site-header .navbar {
+    border-bottom: 1px solid #e6e6e6; /* 밑줄 그림자 대신 얇은 경계선 */
+    background-color: #fff; /* 흰색 배경 */
+}
+
+/* 메뉴아이템 텍스트 스타일 */
+.site-header .nav-link {
+    font-size: 0.95rem;
+    color: #333 !important;
+    transition: color 0.2s ease;
+}
+
+    /* 호버했을 때 컬러 변화 */
+    .site-header .nav-link:hover {
+        color: #007bff !important; /* 파란색 계열로 변경 */
+    }
+
+/* “문의하기” 버튼 (btn-inquiry) 커스텀 */
+.btn-inquiry {
+    background-color: #00b894; /* GS ITM 사이트처럼 민트 계열 */
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+    .btn-inquiry:hover {
+        background-color: #019971; /* 어두운 민트 */
+        text-decoration: none;
+    }
+
+/* 모바일 토글 버튼 색상 조정 (Navbar brand & Toggler 아이콘) */
+.site-header .navbar-toggler {
+    border-color: transparent;
+}
+
+.site-header .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+    .language-selector a:hover {
+        color: #007bff;
+    }
+/* ===================================================
+   ★ Hero 섹션 전체 스타일
+   =================================================== */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 600px; /* 원하는 높이로 조정 가능 */
+    background: url('/images/hero-background.jpg') no-repeat center center; /* 실제 경로에 맞게 변경 */
+    background-size: cover;
+}
+
+    .hero-section .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.45); /* 어두운 오버레이 */
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-section .display-4 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-section .lead {
+        font-size: 1.25rem;
+    }
+
+/* ===================================================
+   ★ About(소개) 섹션 스타일
+   =================================================== */
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.about-section .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+    .about-section .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+/* ===================================================
+   ★ 카드형 뉴스룸(공지사항) 스타일
+   =================================================== */
+/* 카드 그림자, 모서리 라운드 */
+.card {
+    border-radius: 6px;
+}
+
+    .card:hover {
+        transform: translateY(-4px);
+        transition: transform 0.2s ease;
+    }
+
+    .card .card-title a:hover {
+        color: #007bff;
+    }
+
+/* 해시태그 배지 스타일 (Badge) */
+.badge-light {
+    background-color: #f0f0f0;
+    color: #555;
+    border-radius: 4px;
+}
+
+/* 카드 이미지 비율 유지(객체 맞춤) */
+.card-img-top {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    object-fit: cover;
+}
+/* ===================================================
+   ★ 문의하기(Ask) 섹션 ? 입력박스 라인 스타일
+   =================================================== */
+.form-control-underline {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background-color: transparent;
+    transition: border-color 0.2s;
+}
+
+    .form-control-underline:focus {
+        outline: none;
+        border-bottom-color: #007bff;
+        box-shadow: none;
+    }
+
+    .form-control-underline::placeholder {
+        color: #aaa;
+    }
+
+/* textarea 높이 조정, 글자 수 제한 표시 */
+textarea.form-control-underline {
+    resize: none;
+}
+
+/* 레이블(라벨) 스타일 */
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* 체크박스 라벨(작게 표시) */
+.form-check-label {
+    color: #555;
+}
+
+/* 버튼 스타일(문의하기, 취소) */
+/* 문의하기 버튼은 상단에서 이미 .btn-inquiry를 정의했으므로 
+   간단히 btn-primary를 사용하거나, btn-inquiry로 대체 가능 */
+.btn-primary {
+    background-color: #00b894;
+    border-color: #00b894;
+}
+
+    .btn-primary:hover {
+        background-color: #019971;
+        border-color: #019971;
+    }
+
+.btn-outline-secondary {
+    border-color: #ccc;
+    color: #555;
+}
+
+    .btn-outline-secondary:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+/* “0/4000 Byte” 같은 small 텍스트 정렬 */
+.text-right.small {
+    font-size: 0.75rem;
+    color: #888;
+}
+/* ===================================================
+   ★ Service(서비스) 섹션 스타일
+   =================================================== */
+.service-section {
+    background: linear-gradient(135deg, #6ee7b7 0%, #3b82f6 100%);
+    color: #fff;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+    .service-card .card-img-wrapper img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover .card-img-wrapper img {
+        transform: scale(1.05);
+    }
+
+    .service-card .card-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        transition: background 0.3s ease;
+    }
+
+    .service-card:hover .card-overlay {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .service-card .card-title {
+        margin: 0 0 0.25rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .service-card .card-text {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+/* ===================================================
+   ★ Digital Transformation 섹션 스타일
+   =================================================== */
+.dt-section {
+    background-color: #f8f9fa;
+}
+
+.dt-card {
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .dt-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+.dt-text {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* ===================================================
+   ★ Blog 섹션 스타일
+   =================================================== */
+.blog-section .blog-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .blog-section .blog-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-section .blog-card .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+
+.blog-section .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* ===================================================
+   ★ News Room 섹션 스타일
+   =================================================== */
+.news-section .news-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .news-section .news-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-section .news-card .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+
+.news-section .card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.news-section .card-text {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* ===================================================
+   ★ 공통 Utility 추가
+   =================================================== */
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}

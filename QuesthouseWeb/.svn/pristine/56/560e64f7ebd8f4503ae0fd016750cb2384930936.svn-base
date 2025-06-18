@@ -1,0 +1,1285 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+    /* ===================================================
+   ★ 네비게이션 바 전체 스타일
+   =================================================== */
+    .site-header .navbar {
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #fff;
+}
+
+/* 메뉴아이템 텍스트 스타일 */
+.site-header .nav-link {
+    font-size: 0.95rem;
+    color: #333 !important;
+    transition: color 0.2s ease;
+}
+
+    .site-header .nav-link:hover {
+        color: #007bff !important;
+    }
+
+/* “문의하기” 버튼 (btn-inquiry) 커스텀 */
+.btn-inquiry {
+    background-color: #00b894;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+    .btn-inquiry:hover {
+        background-color: #019971;
+        text-decoration: none;
+    }
+
+/* 모바일 토글 버튼 색상 조정 */
+.site-header .navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280,0,0,0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.fixed-size-btn {
+    width: 115px; /* ✅ 고정 너비 */
+    height: 40px; /* ✅ 고정 높이 */
+    padding: 0 12px; /* 내부 여백 (선택) */
+    overflow: hidden; /* 넘치는 글자 숨김 */
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    text-overflow: ellipsis; /* 말줄임표(...) 처리 */
+    font-size: 1rem; /* 글자 크기 고정 (필요 시 조정 가능) */
+}
+
+/* ===================================================
+   ★ Admin(관리자) 섹션 스타일
+   =================================================== */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 15px auto 20px;
+    border-bottom: 1px solid #e0e0e0;
+    max-width: 800px;
+}
+
+.category-tab {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    cursor: pointer;
+    color: #888;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+
+/* ===================================================
+   ★ Hero 섹션 전체 스타일
+   =================================================== */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    background: url('/images/hero-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+    .hero-section .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.45);
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-section .display-4 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-section .lead {
+        font-size: 1.25rem;
+    }
+
+.hero-extra-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===================================================
+   ★ About(소개) 섹션 스타일
+   =================================================== */
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.about-section .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+    .about-section .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+/* ===================================================
+   ★ 카드형 뉴스룸(공지사항) 스타일
+   =================================================== */
+.card {
+    border-radius: 6px;
+}
+
+    .card:hover {
+        transform: translateY(-4px);
+        transition: transform 0.2s ease;
+    }
+
+    .card .card-title a:hover {
+        color: #007bff;
+    }
+
+.badge-light {
+    background-color: #f0f0f0;
+    color: #555;
+    border-radius: 4px;
+}
+
+.card-img-top {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    object-fit: cover;
+}
+
+/* ===================================================
+   ★ 문의하기(Ask) 섹션 입력박스 스타일
+   =================================================== */
+.form-control-underline {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background-color: transparent;
+    transition: border-color 0.2s;
+}
+
+    .form-control-underline:focus {
+        outline: none;
+        border-bottom-color: #007bff;
+        box-shadow: none;
+    }
+
+    .form-control-underline::placeholder {
+        color: #aaa;
+    }
+
+textarea.form-control-underline {
+    resize: none;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-check-label {
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #00b894;
+    border-color: #00b894;
+}
+
+    .btn-primary:hover {
+        background-color: #019971;
+        border-color: #019971;
+    }
+
+.btn-outline-secondary {
+    border-color: #ccc;
+    color: #555;
+}
+
+    .btn-outline-secondary:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+.text-right.small {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* ===================================================
+   ★ Service(서비스) 섹션 스타일
+   =================================================== */
+.service-section {
+    background: linear-gradient(135deg, #6ee7b7 0%, #3b82f6 100%);
+    color: #fff;
+}
+
+.section-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+    .service-card .card-img-wrapper img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover .card-img-wrapper img {
+        transform: scale(1.05);
+    }
+
+    .service-card .card-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        transition: background 0.3s ease;
+    }
+
+    .service-card:hover .card-overlay {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .service-card .card-title {
+        margin: 0 0 0.25rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .service-card .card-text {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+/* ===================================================
+   ★ Digital Transformation 섹션 스타일
+   =================================================== */
+.dt-section {
+    background-color: #f8f9fa;
+}
+
+.dt-card {
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .dt-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+.dt-text {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* ===================================================
+   ★ News Room 섹션 스타일
+   =================================================== */
+.news-section .news-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .news-section .news-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .news-section .news-card .card-img-top {
+        height: 180px;
+        object-fit: cover;
+    }
+
+.news-section .card-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.news-section .card-text {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* ===================================================
+   ★ Map 섹션 스타일
+   =================================================== */
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 비율 */
+}
+
+    .map-responsive iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+/* ===================================================
+   ★ Hero 텍스트 뒤에 배경 이미지 적용 (hero-content)
+   =================================================== */
+.hero-section {
+    position: relative;
+    width: 100%;
+    /* 화면 전체 높이를 채우고 싶으면 아래처럼 100vh 사용 */
+    min-height: 100vh;
+    background-image: url('/images/upload/back2.jpg');
+    /* 실제 파일명은 영문+숫자 조합으로 바꾸시고, .png 대신 .jpg 등 확장자 확인! */
+    background-size: cover; /* 배경 이미지를 영역 크기에 맞춰 자름 */
+    background-position: center center; /* 배경 이미지 가운데 정렬 */
+    background-repeat: no-repeat; /* 반복 없이 한 장만 표시 */
+}
+
+    /* 반투명 검은 오버레이 - 텍스트 가독성을 높이기 위함 */
+    .hero-section .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.45); /* 불투명도 45%짜리 검정 오버레이 */
+        display: flex;
+        align-items: center; /* 수직 중앙 정렬 */
+        justify-content: center; /* 수평 중앙 정렬 (필요 시 justify-content-start 등으로 변경) */
+        text-align: center; /* 양쪽에 여백이 생기도록 중앙 정렬 */
+        padding: 0 1rem; /* 좌우 여백을 조금 줘서 작은 화면에서도 잘림 방지 */
+    }
+
+/* Hero 내부 텍스트 블록 (글자+버튼) */
+.hero-content {
+    color: #ffffff; /* 텍스트를 흰색으로 */
+    max-width: 700px; /* 너무 길게 붙어 다니지 않도록 최대 너비 제한 */
+    width: 100%;
+    padding: 2rem; /* 텍스트와 버튼 주위에 충분한 내부 여백 */
+    /* border-radius: 12px;         원하신다면 배경 블록을 둥글게 */
+}
+
+    /* Hero-content 안의 텍스트 그림자(선택) 
+   배경 이미지 위에서 가독성을 조금 더 높여 줍니다 */
+    .hero-content h1,
+    .hero-content p {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    }
+
+    /* 버튼 모양 */
+    .hero-content .btn-outline-primary {
+        border-color: #fff;
+        color: #fff;
+    }
+
+        .hero-content .btn-outline-primary:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+        }
+
+.modal-content {
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border: none;
+}
+
+/* 헤더 아래에 분리선 */
+.modal-header {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* 타이틀 폰트 조정 */
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* 바디 텍스트 색상, 줄간격 */
+.modal-body p,
+.modal-body ol {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 닫기 버튼 크기 및 여백 */
+.btn-close {
+    font-size: 1.2rem;
+    margin: -0.5rem -0.5rem -0.5rem auto;
+}
+
+/* 푸터 버튼 우측 정렬 */
+.modal-footer {
+    justify-content: flex-end;
+    border-top: 1px solid #e6e6e6;
+}
+
+
+/* 1) 전체 백드롭에 블러 효과 */
+.modal-backdrop.show {
+    backdrop-filter: blur(4px);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* 2) 모달 박스 테마 */
+.modal-themed {
+    border-radius: 16px;
+    overflow: hidden;
+    border: none;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeInUp 0.3s ease-out;
+}
+
+    /* 3) 헤더 스타일 */
+    .modal-themed .modal-header {
+        border-bottom: none;
+        padding: 1.5rem;
+        background: #f7faff;
+        position: relative;
+    }
+
+        .modal-themed .modal-header::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #00b894; /* 브랜드 메인 컬러 */
+        }
+
+.modal-logo {
+    width: 36px;
+    height: 36px;
+    margin-right: 0.75rem;
+}
+
+/* 4) 제목 폰트 강조 */
+.modal-themed .modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* 5) 닫기 버튼 커스텀 */
+.modal-themed .btn-close {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.05);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+    .modal-themed .btn-close:hover {
+        background-color: rgba(0,0,0,0.1);
+        transform: rotate(90deg);
+    }
+
+/* 6) 본문 스크롤 & 타이포 */
+.modal-themed .modal-body {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 1.5rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+    .modal-themed .modal-body p + ol {
+        margin-top: 1rem;
+    }
+
+    .modal-themed .modal-body ol li {
+        margin-bottom: 0.75rem;
+    }
+
+/* 7) 푸터 버튼 강조 */
+.modal-themed .modal-footer {
+    border-top: none;
+    padding: 1rem 1.5rem;
+    justify-content: flex-end;
+}
+
+    .modal-themed .modal-footer .btn-light {
+        background-color: #00b894;
+        color: #fff;
+        border: none;
+        padding: 0.6rem 1.2rem;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+        .modal-themed .modal-footer .btn-light:hover {
+            background-color: #019971;
+        }
+
+/* 8) 등장 애니메이션 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==============================================
+   ★ 문의하기 CTA 배너
+   ============================================== */
+.cta-section {
+    background: linear-gradient(135deg, #6ee7b7 0%, #3b82f6 100%);
+    color: #fff;
+    border-radius: 2rem;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin: 4rem 0;
+}
+
+    .cta-section h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .cta-section p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        opacity: 0.9;
+    }
+
+    .cta-section .btn-cta {
+        background-color: #fff;
+        color: #3b82f6;
+        font-weight: 600;
+        padding: 0.75rem 1.5rem;
+        border-radius: 2rem;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+        .cta-section .btn-cta:hover {
+            background-color: #e2e8f0;
+            color: #1e40af;
+            text-decoration: none;
+        }
+
+/* 모든 모달 dialog 폭을 500px 로 제한 */
+.modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto; /* 좌우 중앙 정렬, 상하 여백 조절 */
+}
+
+    /* 특정 모달(이용약관)만 폭을 줄이고 싶다면,
+   뷰에서 <div class="modal-dialog your-custom-class"> 를 추가한 뒤 아래처럼 지정 */
+    .modal-dialog.terms-dialog {
+        max-width: 400px;
+    }
+
+
+/* 주요 생산품 섹션에 둥근 모서리 적용 */
+#main-products {
+    /* 위아래 여유를 좀 더 주고 */
+    margin: 4rem 0;
+    /* 둥근 모서리(위·아래 모두) */
+    border-radius: 2rem;
+    /* 배경 그라데이션이 모서리에 맞춰 나오도록 */
+    overflow: hidden;
+}
+
+/* (이미 있던) service-section 내부 스타일 */
+.service-section {
+    background: linear-gradient(135deg, #6ee7b7 0%, #3b82f6 100%);
+    color: #fff;
+    /* 기존 패딩 유지 */
+    padding: 3rem 0;
+}
+
+/* 컨테이너 패딩 */
+#main-products .container {
+    padding: 0 2rem;
+}
+
+
+
+/* ===================================================
+   ★ 사업 분야 & 보유 기술 카드형 그리드 스타일
+   =================================================== */
+.icon-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .icon-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .icon-card .icon {
+        font-size: 2.5rem;
+        color: #3b82f6;
+        margin-bottom: 0.75rem;
+    }
+
+    .icon-card h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .icon-card p {
+        font-size: 0.9rem;
+        color: #555;
+        margin: 0;
+    }
+
+@media (max-width: 768px) {
+    .hero-section .display-4 {
+        font-size: 2rem;
+    }
+
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* product-room 섹션 스타일 (site.css로 옮겨도 좋습니다) */
+.product-room {
+}
+
+.product-card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .product-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .product-card .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .product-card .card-text {
+        font-size: 0.85rem;
+    }
+
+/* 기존 회색 오버레이 제거하고 흰색 배경으로 변경 */
+.ceo-intro {
+    background: #fff; /* 흰색 배경 */
+    position: relative;
+    color: #333; /* 텍스트를 어두운 회색으로 */
+}
+
+    /* 오버레이(::before) 제거 */
+    .ceo-intro::before {
+        display: none;
+    }
+
+    /* .ceo-panel 내부 Glassmorphism 패널은 그대로 두거나, 
+   필요하다면 배경 투명도를 낮추고 텍스트 색도 조정하세요 */
+    .ceo-intro .ceo-panel {
+        background: rgba(255,255,255,0.9); /* 거의 흰색에 살짝 투명 */
+        backdrop-filter: none; /* 블러도 제거하려면 none */
+        color: #333; /* 패널 텍스트도 어두운 색으로 */
+    }
+
+    /* 패널 내부 헤딩/본문 텍스트도 다크 모드 폰트 컬러로 */
+    .ceo-intro h3,
+    .ceo-intro .ceo-text,
+    .ceo-intro .ceo-signature {
+        color: #333;
+    }
+/* site.css 등에 추가 */
+.privacy-policy .container {
+    max-width: 800px;
+}
+
+.policy-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.policy-intro p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.policy-content section {
+    margin-bottom: 2.5rem;
+}
+
+.policy-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+}
+
+.policy-content p,
+.policy-content ol,
+.policy-content ul {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.7;
+    margin-left: 1.5rem;
+}
+
+    .policy-content ol li,
+    .policy-content ul li {
+        margin-bottom: 0.5rem;
+    }
+
+/* 번호 매기기 안쪽 여백 조절 */
+.policy-content ol {
+    list-style-position: inside;
+}
+
+/* 표시 순서(ul) 점 여백 조절 */
+.policy-content ul {
+    list-style-type: disc;
+}
+#btnScrollTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+    #btnScrollTop:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    #btnScrollTop svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+/* ==============================================
+   ★ Beyond Business 스타일 (재사용)
+   ============================================== */
+.section-business {
+    width: 100%;
+    background-color: var(--navy);
+    position: relative;
+    display: block;
+    padding: 140px 0 140px;
+}
+
+    .section-business .fixZone {
+        display: flex;
+        gap: 60px;
+        max-width: 1420px;
+        margin: 0 auto;
+        padding: 0 2.5vw;
+    }
+
+    .section-business .tBox {
+        position: sticky;
+        top: 200px;
+        margin-top: 160px;
+    }
+
+    .section-business .tit-wrap {
+        color: #000 !important;
+    }
+
+        .section-business .tit-wrap span {
+            color: var(--main-color) !important;
+            font-size: 24px;
+            display: block;
+            margin-bottom: .5rem;
+        }
+
+        .section-business .tit-wrap h4 {
+            color: #000 !important;
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+    .section-business .imgBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 140px;
+        padding-top: 140px;
+    }
+
+    .section-business .imgZone {
+        width: 700px;
+        height: 455px;
+        background-color: #ddd;
+        border-radius: 12px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .section-business .txtZone {
+        margin: -60px 0 0 70px;
+        color: #000 !important;
+    }
+
+        .section-business .txtZone .bs-title {
+            font-size: 44px;
+            font-weight: 700;
+        }
+
+        .section-business .txtZone span {
+            font-size: 20px;
+            font-weight: 500;
+            display: block;
+        }
+
+/* ==============================================
+   ★ 카드형 그리드 (사업 분야 / 보유 기술)
+   ============================================== */
+.icon-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    padding: 1.5rem 1rem;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+    .icon-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .icon-card .icon {
+        font-size: 2.5rem;
+        color: #3b82f6;
+        margin-bottom: .75rem;
+    }
+
+    .icon-card h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+
+    .icon-card p {
+        font-size: 0.9rem;
+        color: #555;
+    }
+.bs-title {
+    color: #fff !important;
+}
+.mission-section {
+    background-color: #f8f9fa;
+}
+
+    .mission-section .section-title {
+        color: #222;
+    }
+
+    .mission-section h5 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+
+    .mission-section p {
+        font-size: .95rem;
+        color: #555;
+    }
+
+/* ---------------------------------------------------
+   ★ Timeline 스타일
+   --------------------------------------------------- */
+.history-section {
+    background: #fff;
+}
+
+    .history-section .timeline {
+        list-style: none;
+        padding-left: 0;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+        .history-section .timeline li {
+            position: relative;
+            padding: .75rem 1rem .75rem 3rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid #007bff;
+        }
+
+            .history-section .timeline li strong {
+                display: inline-block;
+                width: 60px;
+                font-weight: 700;
+                color: #007bff;
+                margin-left: -3rem;
+                position: absolute;
+                left: 0;
+                top: .75rem;
+            }
+
+            .history-section .timeline li::before {
+                content: '';
+                position: absolute;
+                left: -7px;
+                top: calc(.75rem + 4px);
+                width: 14px;
+                height: 14px;
+                background: #fff;
+                border: 3px solid #007bff;
+                border-radius: 50%;
+            }
+
+/* 간격 최적화 */
+@media (max-width: 768px) {
+    .mission-section .row > .col-md-6 {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+
+/* ──────────────────────────────────────────────
+   ★ Footer 전반 스타일
+────────────────────────────────────────────── */
+.site-footer {
+    background-color: #faf7f0; /* 아이보리 계열 */
+    color: #333; /* 어두운 그레이 */
+    font-size: 0.875rem; /* 기본보다 살짝 작은 글자 */
+    line-height: 1.5;
+}
+
+    /* 푸터 안의 제목(h5) */
+    .site-footer h5 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    /* 개인정보처리방침 링크 */
+    .site-footer .privacy-link {
+        color: #ff6600;
+        text-decoration: none; /* 밑줄 제거 */
+        font-weight: 600;
+    }
+
+        .site-footer .privacy-link:hover {
+            text-decoration: underline; /* hover시에만 밑줄 */
+        }
+
+/* 푸터 구분선 */
+.footer-separator {
+    border: 0;
+    border-top: 1px solid #ddd; /* 연한 그레이 선 */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* dl/dd dt/dd 간격 조정 */
+.site-footer .footer-info dt {
+    font-weight: 600;
+    color: #555;
+}
+
+.site-footer .footer-info dd {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+/* Footer 내부 모바일 대응 */
+@media (max-width: 767px) {
+    .site-footer {
+        text-align: center;
+    }
+
+        .site-footer .footer-info dt,
+        .site-footer .footer-info dd {
+            display: inline-block;
+            width: auto;
+            margin: 0 0.5rem 0.5rem 0;
+        }
+}
+
+
+/* 네비게이션 메뉴 글자 크기 */
+.site-header .nav-link {
+    font-size: 0.9rem; /* 기본 0.95rem → 0.9rem */
+}
+
+
+
+/* ============= MOBILE RESPONSIVE ============= */
+@media (max-width: 768px) {
+    /* 사업 분야 세로 배치 */
+    .section-business .fixZone {
+        flex-direction: column !important;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .section-business .tBox,
+    .section-business .imgBox {
+        width: 100%;
+        margin-top: 0;
+        padding-top: 0;
+        overflow: visible !important;
+    }
+
+    .section-business .txtZone {
+        margin: 1rem 0 0 !important;
+        text-align: center;
+    }
+
+    /* 회사소개 섹션 세로 배치 */
+    .about-section .row {
+        flex-direction: column !important;
+    }
+
+    .about-section .col-md-6 {
+        width: 100% !important;
+    }
+
+        .about-section .col-md-6.mb-4 {
+            margin-bottom: 1.5rem !important;
+        }
+}
+
+@media (max-width: 576px) {
+    /* Hero 글자 크기 축소 */
+    .hero-section .display-4 {
+        font-size: 2rem !important;
+    }
+
+    .hero-section .lead {
+        font-size: 1rem !important;
+    }
+
+    /* 타임라인 좌우 여유 */
+    .history-section .timeline li {
+        padding: .75rem 1rem .75rem 1rem !important;
+    }
+}
+@media (max-width: 768px) {
+    /* 1) imgBox overflow 허용 */
+    .section-business .imgBox {
+        overflow: visible !important;
+    }
+
+    /* 2) txtZone 마진 초기화 */
+    .section-business .txtZone {
+        margin: 1rem auto 0 !important;
+        padding: 0 1rem;
+        text-align: center;
+        position: relative;
+        top: -3rem; /* 원하시는 정도만큼 위로 올려서 겹치게 */
+        left: 0;
+    }
+
+    /* 3) imgZone 크기 조정: 화면 폭에 맞게, 그리고 높이 유지 */
+    .section-business .imgZone {
+        width: 100% !important;
+        /* 화면 폭의 60% 높이를 유지 (원하는 비율로 조정) */
+        height: 60vw !important;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* 4) 타임라인 강제 padding/marker 재배치 */
+    .history-section .timeline {
+        overflow: visible;
+    }
+
+    /* ② mobile 전용으로 strong 위치를 요소 안쪽으로 재배치 */
+    @media (max-width: 768px) {
+        .history-section .timeline li strong {
+            left: 0 !important;
+            margin-left: 0 !important;
+        }
+
+    }
+
+    @media (max-width: 576px) {
+        .section-business .txtZone .bs-title {
+            font-size: 28px; /* 원하시는 크기로 조정 */
+            line-height: 1.2; /* 필요하면 줄간격도 조정 */
+        }
+
+        .section-business .txtZone span {
+            font-size: 14px; /* 설명 텍스트도 작게 */
+        }
+    }
+
+}
+
+
+
+.section-business .imgZone {
+    width: 100% !important; /* 모바일에서 폭 꽉 채우기 */
+    /* height: auto;                <- 이 줄은 지웁니다! */
+    aspect-ratio: 700 / 455; /* 원래 700×455 비율 유지 */
+    background-size: cover;
+    background-position: center center;
+}
+
+/* 데스크탑(769px 이상)만 고정된 px 사이즈로 */
+@media (min-width: 769px) {
+    .section-business .imgZone {
+        width: 700px !important;
+        height: 455px !important;
+        aspect-ratio: auto;
+    }
+}
+/* ===================================================
+   ★ 공통 Utility
+   =================================================== */
+/* .section-title 클래스는 이미 위에 정의되어 있음 */
+/* ??? 공통 폼 컨테이너 ??? */
+.form-container {
+    max-width: 720px;
+    margin: 60px auto;
+    padding: 0 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1c1c1c;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        color: #444;
+    }
+
+.form-control {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+    .form-control:focus {
+        border-color: #0070f3;
+        outline: none;
+    }
+
+/* ??? 제출 버튼 바 ??? */
+.save-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 24px;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+    .btn-primary:hover {
+        background-color: #333;
+    }
+
+.notice-table .preview-link {
+    color: inherit; /* �ؽ�Ʈ �� ���� */
+    text-decoration: none; /* ���� ���� */
+}
+
+    .notice-table .preview-link:hover {
+        text-decoration: underline; /* ȣ�� �� ���� */
+        cursor: pointer;
+    }

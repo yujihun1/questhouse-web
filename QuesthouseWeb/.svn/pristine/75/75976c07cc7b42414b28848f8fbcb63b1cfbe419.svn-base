@@ -1,0 +1,72 @@
+﻿@model QuesthouseWeb.Models.Inquiry
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "문의 상세 보기";
+}
+
+<div class="container py-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">문의 상세</h3>
+        </div>
+        <div class="card-body">
+            <dl class="row mb-4">
+                <dt class="col-sm-3 fw-bold">ID</dt>
+                <dd class="col-sm-9">@Model.Id</dd>
+
+                <dt class="col-sm-3 fw-bold">이름</dt>
+                <dd class="col-sm-9">@Model.Name</dd>
+
+                <dt class="col-sm-3 fw-bold">이메일</dt>
+                <dd class="col-sm-9">@Model.Email</dd>
+
+                <dt class="col-sm-3 fw-bold">연락처</dt>
+                <dd class="col-sm-9">@Model.Mobile</dd>
+
+                <dt class="col-sm-3 fw-bold">등록일시</dt>
+                <dd class="col-sm-9">@Model.Created.ToString("yyyy-MM-dd HH:mm:ss")</dd>
+
+                <dt class="col-sm-3 fw-bold">답변여부</dt>
+                <dd class="col-sm-9">
+                    @if (Model.AnsYn == "Y")
+                    {
+                        <span class="badge bg-success">답변 완료</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">미답변</span>
+                    }
+                </dd>
+
+                <dt class="col-sm-3 fw-bold">문의 내용</dt>
+                <dd class="col-sm-9">@Model.Content</dd>
+            </dl>
+        </div>
+
+        <div class="card-footer d-flex justify-content-between">
+            <a asp-action="Index" class="btn btn-outline-secondary">
+                <i class="bi bi-arrow-left"></i> 목록으로 돌아가기
+            </a>
+            <form asp-action="ToggleAnswer"
+                  asp-controller="Inquiries"
+                  asp-route-id="@Model.Id"
+                  method="post"
+                  onsubmit="return confirm('답변여부를 변경하시겠습니까?');">
+                @Html.AntiForgeryToken()
+                @if (Model.AnsYn == "Y")
+                {
+                    <button type="submit" class="btn btn-warning">
+                        <i class="bi bi-x-circle"></i> 답변 취소
+                    </button>
+                }
+                else
+                {
+                    <button type="submit" class="btn btn-success">
+                        <i class="bi bi-check-circle"></i> 답변 처리
+                    </button>
+                }
+            </form>
+        </div>
+    </div>
+</div>

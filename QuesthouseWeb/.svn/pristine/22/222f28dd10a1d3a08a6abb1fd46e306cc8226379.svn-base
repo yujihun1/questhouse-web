@@ -1,0 +1,184 @@
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using QuesthouseWeb.DataContext;
+using QuesthouseWeb.Models;
+using QuesthouseWeb.Models.ViewModels;
+
+public class ProductController : Controller
+{
+	private readonly AppDbContext _context;
+
+	public ProductController(AppDbContext context)
+	{
+		_context = context;
+	}
+
+	[HttpGet]
+	public async Task<IActionResult> Index(int page = 1, int pageSize = 10)
+	{
+		if (page < 1 || pageSize < 1)
+		{
+			return BadRequest("페이지 값이 잘못되었습니다.");
+		}
+
+		var totalItems = await _context.Product.CountAsync();
+
+		if (totalItems == 0)
+		{
+			return View(new ProductListViewModel
+			{
+				Items = new List<Product>(),
+				Page = page,
+				PageSize = pageSize,
+				TotalItems = 0
+			});
+		}
+
+		var products = await _context.Product
+			.OrderBy(p => p.Id)
+			.Skip((page - 1) * pageSize)
+			.Take(pageSize)
+			.ToListAsync();
+
+		var viewModel = new ProductListViewModel
+		{
+			Items = products,
+			Page = page,
+			PageSize = pageSize,
+			TotalItems = totalItems
+		};
+
+		return View(viewModel);
+	}
+
+	public async Task<IActionResult> Detail(int Id)
+	{
+		if (Id <= 0)
+		{
+			return BadRequest("Id가 존재하지 않습니다");
+		}
+
+		var data = await _context.Product
+			.Include(p => p.ProductClass)
+			.Include(p => p.Photo)
+			.FirstOrDefaultAsync(p => p.Id.Equals(Id));
+
+		if (data == null)
+		{
+			return NotFound();
+		}
+		return View(data);
+	}
+
+	[Authorize]
+	[HttpGet]
+	public async Task<IActionResult> Add()
+	{
+		// 콤보박스
+		var productClasses = await _context.ProductClass.ToListAsync();
+
+		var viewModel = new ProductFormViewModel
+		{
+			Product = new Product
+			{
+				Created = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
+				User_id = 1
+			},
+			ProductClass = productClasses
+		};
+
+		return View(viewModel);
+	}
+
+	[Authorize]
+	[HttpGet]
+	public async Task<IActionResult> Edit(int id)
+	{
+		var product = _context.Product.Find(id);
+		if (product == null)
+		{
+			return NotFound();
+		}
+
+		var viewModel = new ProductFormViewModel
+		{
+			Product = product,
+			ProductClass = await _context.ProductClass.ToListAsync() // 드롭다운용 데이터
+		};
+
+		return View("ProductForm", viewModel);
+	}
+
+	[Authorize]
+	[HttpPost]
+	public async Task<IActionResult> Add(ProductFormViewModel viewModel)
+	{
+
+		var model = viewModel.Product;
+		if (ModelState.IsValid)
+		{
+			_context.Product.Add(model);
+			await _context.SaveChangesAsync();
+
+			return RedirectToAction("Index");
+		}
+		return View(viewModel);
+	}
+
+	[HttpDelete("/api/product/${id}")]
+	public async Task<IActionResult> Delete(int id)
+	{
+
+		if (id <= 0)
+		{
+			return BadRequest("Id가 존재하지 않습니다");
+		}
+
+		var model = await _context.Product.FindAsync(id);
+
+		if (model == null)
+		{
+			return NotFound();
+		}
+		_context.Product.Remove(model);
+		await _context.SaveChangesAsync();
+
+		return Ok(new { message = "삭제 성공" });
+	}
+
+	[Authorize]
+	[HttpPost]
+	public async Task<IActionResult> Edit(int id, ProductPatchDto product)
+	{
+		var NewProduct = await _context.Product.FindAsync(id);
+
+		if (NewProduct == null)
+		{
+			return NotFound();
+		}
+
+		if (product.Name != null)
+		{
+			NewProduct.Name = product.Name;
+		}
+
+		if (product.Desc != null)
+		{
+			NewProduct.Desc = product.Desc;
+		}
+
+		if (product.Photo_id > 0)
+		{
+			NewProduct.Photo_id = product.Photo_id;
+		}
+
+		if (product.Div_id > 0)
+		{
+			NewProduct.Div_id = product.Div_id;
+		}
+		await _context.SaveChangesAsync();
+
+		return RedirectToAction("Products", "Admin");
+	}
+}

@@ -1,0 +1,36 @@
+﻿@model QuesthouseWeb.Models.ViewModels.NewsFormViewModel
+
+<head>
+	<title>뉴스 글 작성</title>
+</head>
+<!-- 뉴스 글 작성 폼 -->
+<form class="form-horizontal" method="post" enctype="multipart/form-data" asp-controller="News" asp-action="Add">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+    <div class="form-group">
+        <label>제목</label>
+        <input asp-for="News.Title" class="form-control" type="text" />
+    </div>
+    <div class="form-group">
+        <label>작성자</label>
+        <input asp-for="News.User_id" class="form-control" type="text" />
+	</div>
+    <div class="form-group">
+        <label>작성일</label>
+        <input asp-for="News.Created" class="form-control" type="text" />
+	</div>
+    <div class="form-group">
+        <label>수정일자</label>
+        <input asp-for="News.Updated" class="form-control" type="text" />
+    </div>
+    <div class="form-group">
+               <label>썸네일 이미지</label>
+               <input asp-for="Upload" type="file" class="form-control" />
+    </div>
+    <div class="form-group">
+        <textarea class="form-control editor" asp-for="News.Content" rows="10" cols="80"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary mt-3">저장</button>
+	</div>
+</form>
+

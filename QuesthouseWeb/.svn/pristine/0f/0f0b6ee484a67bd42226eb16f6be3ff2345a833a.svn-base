@@ -1,0 +1,20 @@
+﻿using Microsoft.EntityFrameworkCore;
+using QuesthouseWeb.Models;
+
+namespace QuesthouseWeb.DataContext
+{
+    public class AppDbContext : DbContext
+    {
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options) { }
+
+        public DbSet<Test> Test { get; set; }
+        public DbSet<Inquiry> Inquiries { get; set; }
+        public DbSet<News> NewsItems { get; set; }
+        public DbSet<Product> Product { get; set; }
+        public DbSet<ProductClass> ProductClass { get; set; }
+
+        public DbSet<Photo> Photos { get; set; }
+    }
+
+}

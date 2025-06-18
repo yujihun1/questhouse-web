@@ -1,0 +1,190 @@
+﻿@using System.Security.Claims
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - QuesthouseWeb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Single+Day&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/trumbowyg/dist/ui/trumbowyg.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/QuesthouseWeb.styles.css" asp-append-version="true" />
+
+    @RenderSection("Styles", required: false)
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- ==============================
+         ★ 헤더: 네비게이션 바
+         ============================== -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container">
+                <!-- 1) 로고(브랜드) -->
+                <a class="navbar-brand pr-4" asp-controller="Home" asp-action="Index">
+                    <!-- 텍스트 대신 로고 이미지를 쓰고 싶으면 <img src="~/images/logo.png" alt="Questhouse" /> 처럼 변경 -->
+                    <img src="~/images/upload/QuestHouse 로고.png" alt="Questhouse" style="height:50px;" />
+                </a>
+
+                <!-- 2) 모바일 토글 버튼 -->
+                <button class="navbar-toggler border-0" type="button"
+                         data-bs-toggle="collapse" data-bs-target="#mainNav"
+                         aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+
+				<!-- 3) 메뉴 아이템: 가운데 정렬(가로), 메뉴 사이 간격, 호버 시 컬러 변화 -->
+				<div class="collapse navbar-collapse justify-content-center" id="mainNav">
+					<ul class="navbar-nav">
+					   
+						<li class="nav-item mx-lg-2">
+							<a class="nav-link text-dark font-weight-medium" asp-controller="Product" asp-action="Index">제품</a>
+						</li>
+						<li class="nav-item mx-lg-2">
+							<a class="nav-link text-dark font-weight-medium" asp-controller="Bbs" asp-action="Index">공지사항</a>
+						</li>
+						<li class="nav-item mx-lg-2">
+							<a class="nav-link text-dark font-weight-medium" asp-controller="Home" asp-action="Info">회사소개</a>
+						</li>
+						<li class="nav-item mx-lg-2">
+							<a class="nav-link text-dark font-weight-medium" asp-controller="Map" asp-action="Index">오시는길</a>
+						</li>
+						<li class="nav-item mx-lg-2">
+							<a class="nav-link text-dark font-weight-medium" asp-controller="Admin" asp-action="Products">관리자페이지</a>
+						</li>
+						
+					</ul>
+				</div>
+
+                <!-- 4) 우측:  문의하기 버튼 -->
+                <div class="d-flex align-items-center">
+                    <!-- 문의하기 버튼: 둥근 모서리, 배경색, 호버 애니메이션 등 -->
+                    <div>
+                        <a href="@Url.Action("Index", "Ask")" class="btn btn-primary btn-inquiry px-4 py-2">
+                            문의하기
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <div class="Accont-btn">
+                            <span>반갑습니다. @User.Identity.Name 님</span>
+                            <a href="@Url.Action("Logout", "Account")" class="btn btn-primary btn-inquiry px-4 py-2">
+                                로그아웃
+                            </a>
+                        </div>
+                    }
+                    @* else
+                    {
+                        <div class="Accont-btn">
+                            <a href="@Url.Action("Login", "Account")" class="btn btn-primary btn-inquiry px-4 py-2">
+                                로그인
+                            </a>
+                        </div>
+                    } *@
+                </div>
+            </div>
+        </nav>
+
+	</header>
+
+    <!-- ==============================
+         ★ 본문 영역 (각 View 결과가 여기에 들어감)
+         ============================== -->
+    <main role="main" class="flex-fill">
+        <div class="container-fluid px-0">
+            @RenderBody()
+        </div>
+    </main>
+
+
+    <!-- ==============================
+      ★ Footer: 개인정보처리방침 & 문의처
+      ============================== -->
+   
+          <footer class="site-footer py-4 mt-auto">
+            <div class="container">
+                <div class="row">
+                    <!-- 왼쪽: 개인정보처리방침 & 회사 정보 -->
+                    <div class="col-md-6 mb-4 mb-md-0">
+
+                        <h5>
+                            <a asp-controller="Home" asp-action="Privacy" class="privacy-link mb-3">
+                                개인정보처리방침
+                            </a>
+                        </h5>
+                        <dl class="row mb-0 footer-info">
+                            <dt class="col-4">회사명</dt>
+                            <dd class="col-8">Questhouse(주)</dd>
+                            <dt class="col-4">대표자명</dt>
+                            <dd class="col-8">민현기</dd>
+                            <dt class="col-4">대표전화</dt>
+                            <dd class="col-8">042-931-0410</dd>
+                            <dt class="col-4">FAX</dt>
+                            <dd class="col-8">042-931-0411</dd>
+                            <dt class="col-4">주소</dt>
+                            <dd class="col-8">대전광역시 유성구 테크노1로 75</dd>
+                        </dl>
+                    </div>
+                </div>
+               
+                           <hr class="footer-separator my-3" />
+                <div class="text-center small mb-0">
+                    &copy; 2025 Questhouse(주). All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+
+    <button id="btnScrollTop" aria-label="맨 위로">
+        <!-- SVG 화살표 아이콘 -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M8 4.5a.5.5 0 0 1 .374.832l-4 4.5a.5.5 0 1 1-.748-.664l4-4.5A.5.5 0 0 1 8 4.5zm0 0a.5.5 0 0 0-.374.832l4 4.5a.5.5 0 1 0 .748-.664l-4-4.5A.5.5 0 0 0 8 4.5z" />
+        </svg>
+    </button>
+
+    <script>
+        const btn = document.getElementById('btnScrollTop');
+        // 스크롤 이벤트: 200px 넘으면 보이기
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 200) {
+            btn.style.display = 'flex';
+          } else {
+            btn.style.display = 'none';
+          }
+        });
+        // 클릭하면 최상단으로 부드럽게 이동
+        btn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/trumbowyg/dist/trumbowyg.min.js"></script>
+    <script src="~/lib/trumbowyg/dist/plugins/upload/trumbowyg.upload.js"></script>
+
+    <script src="~/lib/trumbowyg/langs/ko.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+          duration: 800,    // 애니메이션 길이 (ms)
+          once: true        // 한 번만 실행
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+</body>
+</html>

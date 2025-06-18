@@ -1,0 +1,1377 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\QuesthouseWeb.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QuesthouseWeb.ww3h1sdlcy.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\css\\map.css",
+      "PackagePath": "staticwebassets\\css\\map.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\css\\pagination.css",
+      "PackagePath": "staticwebassets\\css\\pagination.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\css\\product.css",
+      "PackagePath": "staticwebassets\\css\\product.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\gallery\\noise.png",
+      "PackagePath": "staticwebassets\\gallery\\noise.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\default.png",
+      "PackagePath": "staticwebassets\\images\\default.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\info\\Digital Substation.jpg",
+      "PackagePath": "staticwebassets\\images\\info\\Digital Substation.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\info\\HW(1).jpg",
+      "PackagePath": "staticwebassets\\images\\info\\HW(1).jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\info\\HW(2).jpg",
+      "PackagePath": "staticwebassets\\images\\info\\HW(2).jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\info\\Industrial Ethernet Switch(2).jpg",
+      "PackagePath": "staticwebassets\\images\\info\\Industrial Ethernet Switch(2).jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\info\\Industrial Ethernet Switch.jpg",
+      "PackagePath": "staticwebassets\\images\\info\\Industrial Ethernet Switch.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\info\\Industrial Protocol.jpg",
+      "PackagePath": "staticwebassets\\images\\info\\Industrial Protocol.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\info\\SW.jpg",
+      "PackagePath": "staticwebassets\\images\\info\\SW.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\info\\substation automation.jpg",
+      "PackagePath": "staticwebassets\\images\\info\\substation automation.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\info\\web.jpg",
+      "PackagePath": "staticwebassets\\images\\info\\web.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\0c1927ca-2044-4ab0-9577-26d36d6f87a9.png",
+      "PackagePath": "staticwebassets\\images\\news\\0c1927ca-2044-4ab0-9577-26d36d6f87a9.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\1d14f670-9b74-4b96-88b6-1ff9c02c265b.png",
+      "PackagePath": "staticwebassets\\images\\news\\1d14f670-9b74-4b96-88b6-1ff9c02c265b.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\3aec8039-5b90-4181-b675-0a0777cabbfc.png",
+      "PackagePath": "staticwebassets\\images\\news\\3aec8039-5b90-4181-b675-0a0777cabbfc.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\45f50dff-e075-412f-8c54-76813c504ed4.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\45f50dff-e075-412f-8c54-76813c504ed4.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\49ba5199-59b9-4496-9eeb-aed991c588af.png",
+      "PackagePath": "staticwebassets\\images\\news\\49ba5199-59b9-4496-9eeb-aed991c588af.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\4aa7d7b1-023f-489a-870d-acdd547faca7.png",
+      "PackagePath": "staticwebassets\\images\\news\\4aa7d7b1-023f-489a-870d-acdd547faca7.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\670654fd-4471-470a-97cd-6c4abfb44cb2.png",
+      "PackagePath": "staticwebassets\\images\\news\\670654fd-4471-470a-97cd-6c4abfb44cb2.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\6b74af8a-0c97-4682-b6b3-a67730e361e7.png",
+      "PackagePath": "staticwebassets\\images\\news\\6b74af8a-0c97-4682-b6b3-a67730e361e7.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\72778815-b3b3-4c16-96c4-acbb30178a41.png",
+      "PackagePath": "staticwebassets\\images\\news\\72778815-b3b3-4c16-96c4-acbb30178a41.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\755bcc80-f024-45ba-bb74-7bcacd923773.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\755bcc80-f024-45ba-bb74-7bcacd923773.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\805e7230-5bd0-4da1-a7c2-f39832916d1b.png",
+      "PackagePath": "staticwebassets\\images\\news\\805e7230-5bd0-4da1-a7c2-f39832916d1b.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\852923ff-e749-44e3-a80c-483e7506d219.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\852923ff-e749-44e3-a80c-483e7506d219.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\876823f6-6c0e-4e7c-a491-7ac502a4d7b3.png",
+      "PackagePath": "staticwebassets\\images\\news\\876823f6-6c0e-4e7c-a491-7ac502a4d7b3.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\8e39bc0b-6454-4a37-bec5-a104c3e8b532.png",
+      "PackagePath": "staticwebassets\\images\\news\\8e39bc0b-6454-4a37-bec5-a104c3e8b532.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\96ef51e7-4e3a-429c-b6bd-03dcd1e20f3e.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\96ef51e7-4e3a-429c-b6bd-03dcd1e20f3e.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\9bbaaa8b-b05f-4505-9657-1904b836da75.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\9bbaaa8b-b05f-4505-9657-1904b836da75.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\bd4503c5-d71c-46a0-aaec-4463864735e2.png",
+      "PackagePath": "staticwebassets\\images\\news\\bd4503c5-d71c-46a0-aaec-4463864735e2.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\c0403b9c-c379-4ee6-8ad5-f9242f10e5f2.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\c0403b9c-c379-4ee6-8ad5-f9242f10e5f2.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\cc5c33b9-2487-45d8-8f6e-b327173340c1.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\cc5c33b9-2487-45d8-8f6e-b327173340c1.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\ce493d8e-3c0f-4840-a297-343d34a182d1.jpg",
+      "PackagePath": "staticwebassets\\images\\news\\ce493d8e-3c0f-4840-a297-343d34a182d1.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\e241ba66-9dc7-47d1-b9c4-2504eb9183c3.png",
+      "PackagePath": "staticwebassets\\images\\news\\e241ba66-9dc7-47d1-b9c4-2504eb9183c3.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\news\\e7a91a41-6f10-43cf-a122-6df6bcbd80e6.png",
+      "PackagePath": "staticwebassets\\images\\news\\e7a91a41-6f10-43cf-a122-6df6bcbd80e6.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250611144824_1e6558b5-d21b-4084-9f59-c05fdc975644.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250611144824_1e6558b5-d21b-4084-9f59-c05fdc975644.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250611145513_2c84a099-c6e8-4e5f-a3be-28537a200b43.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250611145513_2c84a099-c6e8-4e5f-a3be-28537a200b43.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250613110049_0b94de22-0392-40f7-a526-f9e090b88c59.png",
+      "PackagePath": "staticwebassets\\images\\upload\\20250613110049_0b94de22-0392-40f7-a526-f9e090b88c59.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250613110511_0d699722-1ba6-4d88-bb8e-42aec99d9998.png",
+      "PackagePath": "staticwebassets\\images\\upload\\20250613110511_0d699722-1ba6-4d88-bb8e-42aec99d9998.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250613161936_3c3ba432-10b0-4c64-8533-bab90664d6d4.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250613161936_3c3ba432-10b0-4c64-8533-bab90664d6d4.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616141535_cc53eb55-5ebc-4622-9fa6-c0e28c41116e.png",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616141535_cc53eb55-5ebc-4622-9fa6-c0e28c41116e.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616153145_edbdc2e9-a04b-4e28-a95d-b2d0d21153df.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616153145_edbdc2e9-a04b-4e28-a95d-b2d0d21153df.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616153159_f3288a3d-dc20-42e1-b126-0f239ff1980b.png",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616153159_f3288a3d-dc20-42e1-b126-0f239ff1980b.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616153718_8e75f91f-7798-4965-8f20-f7fd3b54fc47.png",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616153718_8e75f91f-7798-4965-8f20-f7fd3b54fc47.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616153723_8fc111e9-f0ea-40d8-9d23-7dae6d68e593.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616153723_8fc111e9-f0ea-40d8-9d23-7dae6d68e593.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616153736_46c3b861-ca70-46c9-ab6c-6e2b938a6d29.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616153736_46c3b861-ca70-46c9-ab6c-6e2b938a6d29.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616153929_aa78f055-2776-4c8b-9df9-a3c67978f2c3.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616153929_aa78f055-2776-4c8b-9df9-a3c67978f2c3.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616154006_641b502f-abfe-4144-8d4f-eac163d0d784.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616154006_641b502f-abfe-4144-8d4f-eac163d0d784.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616154031_7dc50163-6eca-4f6f-8dfd-2f66358b259c.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616154031_7dc50163-6eca-4f6f-8dfd-2f66358b259c.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616154509_7a1acc18-2720-40b6-b775-ead9083a2034.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616154509_7a1acc18-2720-40b6-b775-ead9083a2034.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250616154750_189371cc-c8a5-4174-ac23-337c3254cfd4.png",
+      "PackagePath": "staticwebassets\\images\\upload\\20250616154750_189371cc-c8a5-4174-ac23-337c3254cfd4.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\20250617150243_0874bfd1-c360-4a4a-acf7-3ea3d065f160.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\20250617150243_0874bfd1-c360-4a4a-acf7-3ea3d065f160.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\QuestHouse 로고.png",
+      "PackagePath": "staticwebassets\\images\\upload\\QuestHouse 로고.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\back1.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\back1.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\back2.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\back2.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\back3.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\back3.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\back4.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\back4.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\back5.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\back5.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\back6.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\back6.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\back7.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\back7.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\images\\upload\\back8.jpg",
+      "PackagePath": "staticwebassets\\images\\upload\\back8.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ar.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ar.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ar.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ar.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\az.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\az.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\az.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\az.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\bg.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\bg.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\bg.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\bg.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\bn.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\bn.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\bn.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\bn.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\by.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\by.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\by.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\by.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ca.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ca.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ca.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ca.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\cs.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\cs.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\cs.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\cs.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\da.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\da.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\da.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\da.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\de.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\de.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\de.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\de.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\el.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\el.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\el.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\el.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\es.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\es.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\es.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\es.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\es_ar.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\es_ar.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\es_ar.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\es_ar.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\et.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\et.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\et.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\et.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\fa.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\fa.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\fa.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\fa.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\fi.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\fi.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\fi.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\fi.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\fr.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\fr.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\fr.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\fr.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\he.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\he.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\he.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\he.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\hr.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\hr.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\hr.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\hr.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\hu.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\hu.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\hu.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\hu.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\id.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\id.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\id.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\id.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\it.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\it.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\it.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\it.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ja.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ja.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ja.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ja.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ko.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ko.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ko.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ko.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\lt.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\lt.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\lt.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\lt.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\mn.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\mn.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\mn.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\mn.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\my.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\my.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\my.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\my.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\nb.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\nb.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\nb.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\nb.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\nl.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\nl.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\nl.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\nl.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ph.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ph.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ph.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ph.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\pl.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\pl.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\pl.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\pl.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\pt.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\pt.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\pt.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\pt.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\pt_br.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\pt_br.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\pt_br.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\pt_br.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ro.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ro.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ro.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ro.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\rs.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\rs.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\rs.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\rs.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\rs_latin.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\rs_latin.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\rs_latin.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\rs_latin.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ru.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ru.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ru.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ru.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\sk.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\sk.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\sk.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\sk.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\sl.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\sl.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\sl.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\sl.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\sq.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\sq.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\sq.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\sq.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\sv.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\sv.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\sv.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\sv.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\th.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\th.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\th.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\th.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\tr.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\tr.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\tr.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\tr.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ua.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ua.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\ua.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\ua.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\vi.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\vi.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\vi.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\vi.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\zh_cn.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\zh_cn.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\zh_cn.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\zh_cn.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\zh_tw.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\zh_tw.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\langs\\zh_tw.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\langs\\zh_tw.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\allowtagsfrompaste\\trumbowyg.allowtagsfrompaste.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\allowtagsfrompaste\\trumbowyg.allowtagsfrompaste.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\allowtagsfrompaste\\trumbowyg.allowtagsfrompaste.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\allowtagsfrompaste\\trumbowyg.allowtagsfrompaste.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\base64\\trumbowyg.base64.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\base64\\trumbowyg.base64.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\base64\\trumbowyg.base64.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\base64\\trumbowyg.base64.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\cleanpaste\\trumbowyg.cleanpaste.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\cleanpaste\\trumbowyg.cleanpaste.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\cleanpaste\\trumbowyg.cleanpaste.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\cleanpaste\\trumbowyg.cleanpaste.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\colors\\trumbowyg.colors.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\colors\\trumbowyg.colors.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\colors\\trumbowyg.colors.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\colors\\trumbowyg.colors.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\colors\\ui\\sass\\trumbowyg.colors.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\colors\\ui\\sass\\trumbowyg.colors.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\colors\\ui\\trumbowyg.colors.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\colors\\ui\\trumbowyg.colors.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\colors\\ui\\trumbowyg.colors.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\colors\\ui\\trumbowyg.colors.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\emoji\\trumbowyg.emoji.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\emoji\\trumbowyg.emoji.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\emoji\\trumbowyg.emoji.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\emoji\\trumbowyg.emoji.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\emoji\\ui\\sass\\trumbowyg.emoji.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\emoji\\ui\\sass\\trumbowyg.emoji.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\emoji\\ui\\trumbowyg.emoji.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\emoji\\ui\\trumbowyg.emoji.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\emoji\\ui\\trumbowyg.emoji.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\emoji\\ui\\trumbowyg.emoji.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\fontfamily\\trumbowyg.fontfamily.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\fontfamily\\trumbowyg.fontfamily.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\fontfamily\\trumbowyg.fontfamily.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\fontfamily\\trumbowyg.fontfamily.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\fontsize\\trumbowyg.fontsize.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\fontsize\\trumbowyg.fontsize.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\fontsize\\trumbowyg.fontsize.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\fontsize\\trumbowyg.fontsize.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\giphy\\trumbowyg.giphy.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\giphy\\trumbowyg.giphy.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\giphy\\trumbowyg.giphy.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\giphy\\trumbowyg.giphy.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\giphy\\ui\\sass\\trumbowyg.giphy.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\giphy\\ui\\sass\\trumbowyg.giphy.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\giphy\\ui\\trumbowyg.giphy.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\giphy\\ui\\trumbowyg.giphy.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\giphy\\ui\\trumbowyg.giphy.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\giphy\\ui\\trumbowyg.giphy.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\highlight\\trumbowyg.highlight.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\highlight\\trumbowyg.highlight.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\highlight\\trumbowyg.highlight.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\highlight\\trumbowyg.highlight.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\highlight\\ui\\sass\\trumbowyg.highlight.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\highlight\\ui\\sass\\trumbowyg.highlight.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\highlight\\ui\\trumbowyg.highlight.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\highlight\\ui\\trumbowyg.highlight.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\highlight\\ui\\trumbowyg.highlight.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\highlight\\ui\\trumbowyg.highlight.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\history\\trumbowyg.history.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\history\\trumbowyg.history.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\history\\trumbowyg.history.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\history\\trumbowyg.history.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\indent\\trumbowyg.indent.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\indent\\trumbowyg.indent.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\indent\\trumbowyg.indent.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\indent\\trumbowyg.indent.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\insertaudio\\trumbowyg.insertaudio.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\insertaudio\\trumbowyg.insertaudio.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\insertaudio\\trumbowyg.insertaudio.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\insertaudio\\trumbowyg.insertaudio.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\lineheight\\trumbowyg.lineheight.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\lineheight\\trumbowyg.lineheight.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\lineheight\\trumbowyg.lineheight.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\lineheight\\trumbowyg.lineheight.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mathml\\trumbowyg.mathml.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mathml\\trumbowyg.mathml.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mathml\\trumbowyg.mathml.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mathml\\trumbowyg.mathml.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mathml\\ui\\sass\\trumbowyg.mathml.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mathml\\ui\\sass\\trumbowyg.mathml.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mathml\\ui\\trumbowyg.mathml.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mathml\\ui\\trumbowyg.mathml.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mathml\\ui\\trumbowyg.mathml.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mathml\\ui\\trumbowyg.mathml.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mention\\trumbowyg.mention.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mention\\trumbowyg.mention.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mention\\trumbowyg.mention.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mention\\trumbowyg.mention.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mention\\ui\\sass\\trumbowyg.mention.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mention\\ui\\sass\\trumbowyg.mention.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mention\\ui\\trumbowyg.mention.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mention\\ui\\trumbowyg.mention.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\mention\\ui\\trumbowyg.mention.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\mention\\ui\\trumbowyg.mention.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\noembed\\trumbowyg.noembed.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\noembed\\trumbowyg.noembed.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\noembed\\trumbowyg.noembed.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\noembed\\trumbowyg.noembed.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\pasteembed\\trumbowyg.pasteembed.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\pasteembed\\trumbowyg.pasteembed.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\pasteembed\\trumbowyg.pasteembed.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\pasteembed\\trumbowyg.pasteembed.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\pasteimage\\trumbowyg.pasteimage.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\pasteimage\\trumbowyg.pasteimage.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\pasteimage\\trumbowyg.pasteimage.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\pasteimage\\trumbowyg.pasteimage.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\preformatted\\trumbowyg.preformatted.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\preformatted\\trumbowyg.preformatted.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\preformatted\\trumbowyg.preformatted.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\preformatted\\trumbowyg.preformatted.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\resizimg\\trumbowyg.resizimg.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\resizimg\\trumbowyg.resizimg.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\resizimg\\trumbowyg.resizimg.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\resizimg\\trumbowyg.resizimg.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\ruby\\trumbowyg.ruby.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\ruby\\trumbowyg.ruby.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\ruby\\trumbowyg.ruby.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\ruby\\trumbowyg.ruby.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\specialchars\\trumbowyg.specialchars.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\specialchars\\trumbowyg.specialchars.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\specialchars\\trumbowyg.specialchars.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\specialchars\\trumbowyg.specialchars.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\specialchars\\ui\\sass\\trumbowyg.specialchars.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\specialchars\\ui\\sass\\trumbowyg.specialchars.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\specialchars\\ui\\trumbowyg.specialchars.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\specialchars\\ui\\trumbowyg.specialchars.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\specialchars\\ui\\trumbowyg.specialchars.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\specialchars\\ui\\trumbowyg.specialchars.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\speechrecognition\\trumbowyg.speechrecognition.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\speechrecognition\\trumbowyg.speechrecognition.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\speechrecognition\\trumbowyg.speechrecognition.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\speechrecognition\\trumbowyg.speechrecognition.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\table\\trumbowyg.table.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\table\\trumbowyg.table.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\table\\trumbowyg.table.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\table\\trumbowyg.table.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\table\\ui\\sass\\trumbowyg.table.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\table\\ui\\sass\\trumbowyg.table.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\table\\ui\\trumbowyg.table.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\table\\ui\\trumbowyg.table.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\table\\ui\\trumbowyg.table.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\table\\ui\\trumbowyg.table.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\template\\trumbowyg.template.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\template\\trumbowyg.template.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\template\\trumbowyg.template.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\template\\trumbowyg.template.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\tenor\\trumbowyg.tenor.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\tenor\\trumbowyg.tenor.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\tenor\\trumbowyg.tenor.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\tenor\\trumbowyg.tenor.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\tenor\\ui\\sass\\trumbowyg.tenor.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\tenor\\ui\\sass\\trumbowyg.tenor.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\tenor\\ui\\trumbowyg.tenor.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\tenor\\ui\\trumbowyg.tenor.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\tenor\\ui\\trumbowyg.tenor.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\tenor\\ui\\trumbowyg.tenor.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\upload\\trumbowyg.upload.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\upload\\trumbowyg.upload.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\plugins\\upload\\trumbowyg.upload.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\plugins\\upload\\trumbowyg.upload.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\trumbowyg.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\trumbowyg.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\trumbowyg.min.js",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\trumbowyg.min.js"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\ui\\icons.svg",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\ui\\icons.svg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\ui\\sass\\trumbowyg.scss",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\ui\\sass\\trumbowyg.scss"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\ui\\trumbowyg.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\ui\\trumbowyg.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\ui\\trumbowyg.min.css",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\ui\\trumbowyg.min.css"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\lib\\trumbowyg\\dist\\ui\\trumbowyg.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\trumbowyg\\dist\\ui\\trumbowyg.min.css.map"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\075ee0a3-a5b7-4522-bc5b-528bb13de4e1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\075ee0a3-a5b7-4522-bc5b-528bb13de4e1.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\084c45c0-7f97-4718-9726-a414ff2a1db9.png",
+      "PackagePath": "staticwebassets\\uploads\\084c45c0-7f97-4718-9726-a414ff2a1db9.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\192fd3e0-7f56-4edf-925b-e4404601c7e5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\192fd3e0-7f56-4edf-925b-e4404601c7e5.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\21cc2e55-94bd-4de3-a9ee-0679e1fe1b59.png",
+      "PackagePath": "staticwebassets\\uploads\\21cc2e55-94bd-4de3-a9ee-0679e1fe1b59.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\222d3715-f48f-4892-a548-c27288edc076.png",
+      "PackagePath": "staticwebassets\\uploads\\222d3715-f48f-4892-a548-c27288edc076.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\2796fdc2-2df7-4ee9-b553-39e2f9a34cb5.png",
+      "PackagePath": "staticwebassets\\uploads\\2796fdc2-2df7-4ee9-b553-39e2f9a34cb5.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\3b64dc34-f187-40c3-adc8-ca139e2ea753.jpg",
+      "PackagePath": "staticwebassets\\uploads\\3b64dc34-f187-40c3-adc8-ca139e2ea753.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\3df2b987-2fea-4b82-97b2-387cfb36ea8f.png",
+      "PackagePath": "staticwebassets\\uploads\\3df2b987-2fea-4b82-97b2-387cfb36ea8f.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\41b0000b-aa0d-4202-876f-a5dd9ad72adf.png",
+      "PackagePath": "staticwebassets\\uploads\\41b0000b-aa0d-4202-876f-a5dd9ad72adf.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\4d712346-cb10-4e00-b54f-d6b250fae9d9.png",
+      "PackagePath": "staticwebassets\\uploads\\4d712346-cb10-4e00-b54f-d6b250fae9d9.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\520a74d3-1aad-45a6-b852-1be8396a0ca1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\520a74d3-1aad-45a6-b852-1be8396a0ca1.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\5a269f3d-9411-455e-b386-6131fd04ec69.jpg",
+      "PackagePath": "staticwebassets\\uploads\\5a269f3d-9411-455e-b386-6131fd04ec69.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\640f1929-8f6b-4050-90a4-3b9c8c8b1f6e.png",
+      "PackagePath": "staticwebassets\\uploads\\640f1929-8f6b-4050-90a4-3b9c8c8b1f6e.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\64420aef-9292-4b23-8c87-fd26e953d514.jpg",
+      "PackagePath": "staticwebassets\\uploads\\64420aef-9292-4b23-8c87-fd26e953d514.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\6d7efc75-9e78-486b-b954-cf2304836f08.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6d7efc75-9e78-486b-b954-cf2304836f08.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\6e7b7acb-e32a-4d5f-996d-f080e163bafc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6e7b7acb-e32a-4d5f-996d-f080e163bafc.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\6f2f6b28-eb90-42a6-a57d-066c141d10b5.png",
+      "PackagePath": "staticwebassets\\uploads\\6f2f6b28-eb90-42a6-a57d-066c141d10b5.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\74867b26-4ce5-4157-b756-db3888470958.jpg",
+      "PackagePath": "staticwebassets\\uploads\\74867b26-4ce5-4157-b756-db3888470958.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\7f478b32-028a-471a-b705-29ab98f87e5e.png",
+      "PackagePath": "staticwebassets\\uploads\\7f478b32-028a-471a-b705-29ab98f87e5e.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\804aeae8-3f79-444b-a14d-7bc1fe6af87c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\804aeae8-3f79-444b-a14d-7bc1fe6af87c.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\82d1e994-b447-4255-93cd-d55ee16ecf1f.jpg",
+      "PackagePath": "staticwebassets\\uploads\\82d1e994-b447-4255-93cd-d55ee16ecf1f.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\9090f25f-2a70-4ca2-ac6c-8482e4eafded.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9090f25f-2a70-4ca2-ac6c-8482e4eafded.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\95a1c491-9fc0-4916-9809-5b4faf65ac11.png",
+      "PackagePath": "staticwebassets\\uploads\\95a1c491-9fc0-4916-9809-5b4faf65ac11.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\97fcabff-5550-4acb-8984-b5059aca113a.png",
+      "PackagePath": "staticwebassets\\uploads\\97fcabff-5550-4acb-8984-b5059aca113a.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\ac431d83-0f54-485b-867b-b241d0d17b59.png",
+      "PackagePath": "staticwebassets\\uploads\\ac431d83-0f54-485b-867b-b241d0d17b59.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\bc2e5c2b-acfc-4757-86df-11b11a58815d.png",
+      "PackagePath": "staticwebassets\\uploads\\bc2e5c2b-acfc-4757-86df-11b11a58815d.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\c24d37ac-fc40-4ff9-8e31-17929dce3578.png",
+      "PackagePath": "staticwebassets\\uploads\\c24d37ac-fc40-4ff9-8e31-17929dce3578.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\c4076db8-20ac-4ef8-ab4f-bf6cafaa2b5d.png",
+      "PackagePath": "staticwebassets\\uploads\\c4076db8-20ac-4ef8-ab4f-bf6cafaa2b5d.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\cc20ab00-c688-4b85-a2f5-a9ec8ac3ba64.jpg",
+      "PackagePath": "staticwebassets\\uploads\\cc20ab00-c688-4b85-a2f5-a9ec8ac3ba64.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\ce3cdb3f-c7db-4f99-b214-b215d8c21ac7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ce3cdb3f-c7db-4f99-b214-b215d8c21ac7.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\ceb30913-142f-4141-8da6-f8b1f46ba181.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ceb30913-142f-4141-8da6-f8b1f46ba181.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\d1b86c3c-6e92-4661-afde-9fe59bbe9189.png",
+      "PackagePath": "staticwebassets\\uploads\\d1b86c3c-6e92-4661-afde-9fe59bbe9189.png"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\db61335d-d59e-4154-bd33-d4ab578d4944.jpg",
+      "PackagePath": "staticwebassets\\uploads\\db61335d-d59e-4154-bd33-d4ab578d4944.jpg"
+    },
+    {
+      "Id": "C:\\QuesthouseWeb\\QuesthouseWeb\\wwwroot\\uploads\\e2318cb7-0e01-45fa-9ac7-9e2cb99874f8.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e2318cb7-0e01-45fa-9ac7-9e2cb99874f8.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.QuesthouseWeb.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.QuesthouseWeb.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.QuesthouseWeb.props",
+      "PackagePath": "build\\QuesthouseWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.QuesthouseWeb.props",
+      "PackagePath": "buildMultiTargeting\\QuesthouseWeb.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.QuesthouseWeb.props",
+      "PackagePath": "buildTransitive\\QuesthouseWeb.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,31 @@
+﻿@model QuesthouseWeb.Models.Product
+
+@{
+    ViewData["Title"] = "제품 상세";
+}
+
+<link rel="stylesheet" href="~/css/product.css" />
+<div class="post-wrapper">
+    @* 썸네일 이미지 (있을 때만 보여줌)*@
+    
+    <script>
+        console.log(@Model.Photo_id);
+    </script>
+
+    @if (Model.Photo_id > 0 && Model.Photo != null)
+    {
+        <img src="@Model.Photo.Photo_path" alt="제품 이미지" class="post-image" />
+    }
+
+    <div class="post-title">@Model.Name</div>
+
+    <div class="post-meta">
+        등록일: @Model.Created | 구분: @Model.ProductClass?.Div_nm | 작성자: @Model.User_id
+    </div>
+
+    <div class="post-desc">
+        @Html.Raw(Model.Desc)
+    </div>
+
+    <a href="/Product/Index" class="back-button">← 목록으로 돌아가기</a>
+</div>

@@ -1,0 +1,194 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "회사소개";
+}
+
+<section class="hero-section" style="min-height:300px; background-image:url('/images/upload/back7.jpg');">
+    <div class="hero-overlay d-flex align-items-center justify-content-center">
+        <div class="hero-content text-center">
+            <h1 class="display-4 font-weight-bold mb-3">Questhouse(주)</h1>
+            <p class="lead mb-0">디지털 혁신을 선도하는 IT 솔루션 기업</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-section py-5">
+    <div class="container">
+        <h2 class="section-title text-dark">회사 개요</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="~/images/upload/back5.jpg"
+                     alt="***"
+                     class="img-fluid rounded-lg shadow-sm" />
+            </div>
+            <div class="col-md-6">
+                <p class="text-muted mb-3">
+                    Questhouse(주)는 2018년 설립 이래,
+                    스마트그리드·디지털변전소용 H/W·S/W 솔루션 분야에서
+                    축적된 노하우를 바탕으로 차별화된 서비스를 제공합니다.
+                </p>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item">설립연도: 2018년</li>
+                    <li class="list-group-item">본사 위치: 대전광역시 유성구 테그노 1로75</li>
+                  
+                </ul>
+                <a href="#business-areas" class="btn btn-outline-primary">
+                    사업 분야 보기 →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     ★ 미션·비전 섹션
+     ============================== -->
+<section id="mission-vision" class="mission-section py-5 bg-light">
+      <div class="container">
+            <h2 class="section-title text-dark text-center mb-4">미션 &amp; 비전</h2>
+           <div class="row">
+                  <div class="col-md-6 text-center">
+                        <h5 class="mb-2">미션</h5>
+                        <p>스마트그리드 혁신을 통해 에너지의 미래를 선도합니다.</p>
+                
+            </div>
+                  <div class="col-md-6 text-center">
+                        <h5 class="mb-2">비전</h5>
+                        <p>글로벌 시장에서 인정받는 디지털 변전소 솔루션 기업으로 성장</p>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+    
+</section>
+
+
+<!-- ==============================
+     ★ 회사 연혁(타임라인) 섹션
+     ============================== -->
+<section id="history" class="history-section py-5">
+      <div class="container">
+            <h2 class="section-title text-dark text-center mb-4">회사 연혁</h2>
+            <ul class="timeline">
+            
+            <li><strong>2018</strong> 설립 및 스마트그리드 연구개발 착수</li>
+            
+            <li><strong>2019</strong> 디지털변전소 H/W·S/W 솔루션 양산 시작</li>
+            
+            <li><strong>2021</strong> 해외 시장 첫 수출 계약 체결</li>
+            
+            <li><strong>2023</strong> AI 영상처리 플랫폼 상용화</li>
+            
+        </ul>
+        
+    </div>
+    
+</section>
+
+
+<!-- ==============================
+     ★ 사업 분야 섹션
+     Beyond Business 구조와 동일하게 AOS 적용
+     ============================== -->
+<section id="business-areas" class="section-business" data-aos="fade-up">
+    <div class="fixZone">
+        <div class="tBox-wrap">
+            <div class="tBox">
+                <div class="tit-wrap" data-aos="fade-right">
+                    <span>
+                        Business field
+                    </span>
+                    <h4>사업분야</h4>
+                    <div class="more-btn-wrap mt-3">
+                        <a href="#technologies" class="btn btn-outline-dark">
+                            View More →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imgBox">
+            <div class="img-inner" data-aos="fade-up" data-aos-delay="100">
+                <div class="imgZone university" style="background-image:url('/images/info/Digital Substation.jpg')"></div>
+                <div class="txtZone">
+                    <p class="bs-title">디지털변전소용 장비 개발</p>
+                    <span>지능형 전력망과 변전소에 적용되는<br>맞춤형 하드웨어 솔루션을 설계·제작</span>
+                </div>
+            </div>
+            <div class="img-inner" data-aos="fade-up" data-aos-delay="200">
+                <div class="imgZone solution" style="background-image:url('/images/info/substation automation.jpg')"></div>
+                <div class="txtZone">
+                    <p class="bs-title">SA(Substation Automation)</p>
+                    <span>변전소 자동화 시스템 간 통신 프로토콜을 상호<br>변환하는 소프트웨어 모듈 개발</span>
+                </div>
+            </div>
+            <div class="img-inner" data-aos="fade-up" data-aos-delay="300">
+                <div class="imgZone ai" style="background-image:url('/images/info/HW(1).jpg')"></div>
+                <div class="txtZone">
+                    <p class="bs-title">H/W 제작&amp;System Integration</p>
+                    <span>전용 장비 제작부터 전체 시스템 통합까지<br>전 공정을 일괄 수행</span>
+                </div>
+            </div>
+            <div class="img-inner" data-aos="fade-up" data-aos-delay="400">
+                <div class="imgZone smart" style="background-image:url('/images/info/Industrial Ethernet Switch(2).jpg')"></div>
+                <div class="txtZone">
+                    <p class="bs-title">산업용 스위치·산업용 컴퓨터</p>
+                    <span>거친 환경에 견디는 네트워크 스위치와<br>임베디드 컴퓨터 설계·제작</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     ★ 보유 기술 섹션
+     Beyond Business와 동일한 AOS 애니메이션
+     ============================== -->
+<section id="technologies" class="section-business" data-aos="fade-up">
+    <div class="fixZone">
+        <div class="tBox-wrap">
+            <div class="tBox">
+                <div class="tit-wrap text-center" data-aos="fade-right">
+                    <span>
+                        Possessed technology
+                    </span>
+                    <h4>보유 기술</h4>
+                </div>
+            </div>
+        </div>
+        <div class="imgBox">
+            <div class="img-inner" data-aos="fade-up" data-aos-delay="100">
+                <div class="imgZone" style="background-image:url('/images/info/HW(2).jpg')"></div>
+                <div class="txtZone">
+                    <p class="bs-title">H/W 설계</p>
+                    <span>Custom PCB·Embedded 시스템</span>
+                </div>
+            </div>
+            <div class="img-inner" data-aos="fade-up" data-aos-delay="200">
+                <div class="imgZone" style="background-image:url('/images/info/SW.jpg')"></div>
+                <div class="txtZone">
+                    <p class="bs-title">소프트웨어</p>
+                    <span>Windows, Linux, VxWorks<br>다양한 OS 환경용 소프트웨어 개발</span>
+                </div>
+            </div>
+            <div class="img-inner" data-aos="fade-up" data-aos-delay="300">
+                <div class="imgZone" style="background-image:url('/images/info/Industrial Protocol.jpg')"></div>
+                <div class="txtZone">
+                    <p class="bs-title">산업용 프로토콜 처리</p>
+                    <span>IEC61850, DNP3, Modbus 등<br>표준 통신 프로토콜 기반 데이터 처리 역량</span>
+                </div>
+            </div>
+            <div class="img-inner" data-aos="fade-up" data-aos-delay="400">
+                <div class="imgZone" style="background-image:url('/images/info/web.jpg')"></div>
+                <div class="txtZone">
+                    <p class="bs-title">Web & HMI</p>
+                    <span>웹 인터페이스 구축과 윈도우 환경 GUI(HMI) 애플리케이션 개발</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

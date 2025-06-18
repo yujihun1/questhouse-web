@@ -1,0 +1,53 @@
+﻿@model QuesthouseWeb.Models.ViewModels.NewsFormViewModel
+@{
+    ViewData["Title"] = "뉴스 글 작성";
+}
+
+<div class="form-container">
+    <h1 class="form-title">@ViewData["Title"]</h1>
+
+    <form method="post" enctype="multipart/form-data"
+          asp-controller="News" asp-action="Add">
+        <div asp-validation-summary="ModelOnly"
+             class="text-danger form-group"></div>
+
+        <div class="form-group">
+            <label asp-for="News.Title">제목</label>
+            <input asp-for="News.Title" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="News.User_id">작성자</label>
+            <input asp-for="News.User_id" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="News.Created">작성일</label>
+            <input asp-for="News.Created" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="News.Updated">수정일자</label>
+            <input asp-for="News.Updated" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label>썸네일 이미지</label>
+            <input asp-for="Upload"
+                   type="file"
+                   class="form-control"
+                   accept="image/*" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="News.Content">내용</label>
+            <textarea asp-for="News.Content"
+                      class="form-control editor"
+                      rows="10"></textarea>
+        </div>
+
+        <div class="save-bar">
+            <button type="submit" class="btn-primary">저장</button>
+        </div>
+    </form>
+</div>

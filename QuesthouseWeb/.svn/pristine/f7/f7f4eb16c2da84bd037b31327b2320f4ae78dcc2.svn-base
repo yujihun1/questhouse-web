@@ -1,0 +1,39 @@
+﻿@model QuesthouseWeb.Models.ViewModels.ProductFormViewModel
+
+<head>
+	<title>블로그 글 작성</title>
+</head>
+<!-- 블로그 글 작성 폼 -->
+<form class="form-horizontal" method="post" asp-controller="Product" asp-action="Add">
+    <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+    <div class="form-group">
+        <label>제목</label>
+        <input asp-for="Product.Name" class="form-control" type="text" />
+    </div>
+    <div class="form-group">
+        <label>작성자</label>
+        <input asp-for="Product.User_id" class="form-control" type="text" />
+	</div>
+    <div class="form-group">
+        <label>작성일</label>
+        <input asp-for="Product.Created" class="form-control" type="text" />
+	</div>
+    <div>
+        <label>제품구분</label>
+        <select asp-for="Product.Div_id" class="form-control">
+            <option value="">선택하세요</option>
+            @foreach (var ProductClass in Model.ProductClass)
+            {
+                <option value="@ProductClass.Div_id">@ProductClass.Div_nm</option>
+            }
+		</select>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control editor" asp-for="Product.Desc" rows="10" cols="80"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary mt-3">저장</button>
+	</div>
+    
+</form>
+

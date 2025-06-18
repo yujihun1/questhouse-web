@@ -1,0 +1,264 @@
+﻿using System.Net.NetworkInformation;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using QuesthouseWeb.DataContext;
+using QuesthouseWeb.Models;
+using QuesthouseWeb.Models.ViewModels;
+using System.Security.Claims;
+
+public class ProductController : Controller
+{
+	private readonly AppDbContext _context;
+
+
+	public ProductController(AppDbContext context)
+	{
+		_context = context;
+	}
+
+	[HttpGet]
+	public async Task<IActionResult> Index(int page = 1, int pageSize = 9, int? categoryId = null)
+	{
+		if (page < 1 || pageSize < 1)
+		{
+			return BadRequest("페이지 값이 잘못되었습니다.");
+		}
+
+		IQueryable<Product> query = _context.Product.Include(p => p.Photo);
+
+		if (categoryId.HasValue)
+		{
+			query = query.Where(p => p.Div_id == categoryId.Value);
+		}
+
+		var totalItems = await query.CountAsync();
+
+		var products = await query
+			.OrderBy(p => p.Id)
+			.Skip((page - 1) * pageSize)
+			.Take(pageSize)
+			.ToListAsync();
+
+		var viewModel = new ProductListViewModel
+		{
+			Items = products,
+			Page = page,
+			PageSize = pageSize,
+			TotalItems = totalItems,
+			SelectedCategoryId = categoryId // ViewModel에 이 값도 넘기면 좋음
+		};
+
+		return View(viewModel);
+	}
+
+	public async Task<IActionResult> Detail(int Id)
+	{
+		if (Id <= 0)
+		{
+			return BadRequest("Id가 존재하지 않습니다");
+		}
+
+		var data = await _context.Product
+			.Include(p => p.ProductClass)
+			.Include(p => p.Photo)
+			.FirstOrDefaultAsync(p => p.Id.Equals(Id));
+
+		if (data == null)
+		{
+			return NotFound();
+		}
+		return View(data);
+	}
+
+	[Authorize]
+	[HttpGet]
+	public async Task<IActionResult> Add()
+	{
+		// 콤보박스
+		var productClasses = await _context.ProductClass.ToListAsync();
+
+        // 1. 이메일 Claim 가져오기
+        var email = User.FindFirst(ClaimTypes.Email)?.Value;
+
+        // 2. @ 앞부분 추출
+        string? emailId = null;
+        if (!string.IsNullOrEmpty(email))
+        {
+            var atIndex = email.IndexOf('@');
+            if (atIndex > 0)
+            {
+                emailId = email.Substring(0, atIndex);
+            }
+        }
+
+        var viewModel = new ProductFormViewModel
+		{
+			Product = new Product
+			{
+				User_id = emailId
+            },
+			ProductClass = productClasses
+		};
+
+        return View(viewModel);
+    }
+
+	[Authorize]
+	[HttpGet]
+	public async Task<IActionResult> Edit(int id)
+	{
+		var product = _context.Product.Find(id);
+		if (product == null)
+		{
+			return NotFound();
+		}
+
+		var viewModel = new ProductFormViewModel
+		{
+			Product = product,
+			ProductClass = await _context.ProductClass.ToListAsync() // 드롭다운용 데이터
+		};
+
+		return View(viewModel);
+	}
+
+	[Authorize]
+	[HttpPost]
+	public async Task<IActionResult> Add(ProductPatchDto product, IFormFile Thumbnail)
+	{
+
+		Product newProduct = new Product
+		{
+			Name = product.Name,
+			User_id = product.User_id,
+			Created = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
+			Photo_id = product.Photo_id,
+			Div_id = product.Div_id,
+			Desc = product.Desc
+		};
+
+		// 썸네일 파일 처리
+		if (Thumbnail != null && Thumbnail.Length > 0)
+		{
+			var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+			if (!Directory.Exists(uploadsFolder))
+			{
+				Directory.CreateDirectory(uploadsFolder);
+			}
+
+			var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(Thumbnail.FileName);
+			var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+			using (var stream = new FileStream(filePath, FileMode.Create))
+			{
+				await Thumbnail.CopyToAsync(stream);
+			}
+
+			// Photo 엔터티 생성 및 저장
+			var photo = new Photo
+			{
+				Photo_path = "/uploads/" + uniqueFileName // 웹에서 접근 가능한 경로
+			};
+
+			_context.Photos.Add(photo);
+			await _context.SaveChangesAsync(); // Photo 저장 -> Id 생성됨
+
+			// Product에 연결
+			newProduct.Photo_id = photo.Photo_id;
+		}
+
+		_context.Product.Add(newProduct);
+
+		await _context.SaveChangesAsync();
+		return RedirectToAction("Products", "Admin");
+	}
+
+	[Authorize]
+	[HttpDelete("/api/products/{id}")]
+	public async Task<IActionResult> Delete(int id)
+	{
+
+		if (id <= 0)
+		{
+			return BadRequest("Id가 존재하지 않습니다");
+		}
+
+		var model = await _context.Product.FindAsync(id);
+
+		if (model == null)
+		{
+			return NotFound();
+		}
+		_context.Product.Remove(model);
+		await _context.SaveChangesAsync();
+
+		return Ok(new { message = "삭제 성공" });
+	}
+
+	[Authorize]
+	[HttpPost]
+	public async Task<IActionResult> Edit(int id, ProductPatchDto product, IFormFile Thumbnail)
+	{
+		var newProduct = await _context.Product.FindAsync(id);
+
+		if (newProduct == null)
+		{
+			return NotFound();
+		}
+
+		if (product.Name != null)
+		{
+			newProduct.Name = product.Name;
+		}
+
+		if (product.Desc != null)
+		{
+			newProduct.Desc = product.Desc;
+		}
+
+		if (product.Photo_id > 0)
+		{
+			newProduct.Photo_id = product.Photo_id;
+		}
+
+		if (product.Div_id > 0)
+		{
+			newProduct.Div_id = product.Div_id;
+		}
+
+		// 썸네일 파일 처리
+		if (Thumbnail != null && Thumbnail.Length > 0)
+		{
+			var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
+			if (!Directory.Exists(uploadsFolder))
+			{
+				Directory.CreateDirectory(uploadsFolder);
+			}
+
+			var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(Thumbnail.FileName);
+			var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+			using (var stream = new FileStream(filePath, FileMode.Create))
+			{
+				await Thumbnail.CopyToAsync(stream);
+			}
+
+			// Photo 엔터티 생성 및 저장
+			var photo = new Photo
+			{
+				Photo_path = "/uploads/" + uniqueFileName // 웹에서 접근 가능한 경로
+			};
+
+			_context.Photos.Add(photo);
+			await _context.SaveChangesAsync(); // Photo 저장 -> Id 생성됨
+
+			// Product에 연결
+			newProduct.Photo_id = photo.Photo_id;
+		}
+
+		await _context.SaveChangesAsync();
+
+		return RedirectToAction("Products", "Admin");
+	}
+}

@@ -1,0 +1,38 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace QuesthouseWeb.Models
+{
+    [Table("Product")]
+    public class Product
+    {
+        [Required]
+        public int Id { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+
+        [Required]
+        public string Desc { get; set; }
+
+        [Required]
+        public string Created { get; set; }
+
+        [Required]
+        public int Div_id { get; set; }
+
+        public int Photo_id { get; set; }
+
+        [Required]
+        public int User_id { get; set; }
+
+		//public List<ProductClass> ProductClassList { get; set; }
+
+		[ForeignKey("Div_id")]
+		public ProductClass ProductClass { get; set; }
+
+        [ForeignKey("Photo_id")]
+        public Photo Photo { get; set; }
+
+	}
+}

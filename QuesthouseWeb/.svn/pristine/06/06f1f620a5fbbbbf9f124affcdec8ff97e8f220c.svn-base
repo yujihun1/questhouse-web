@@ -1,0 +1,133 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "회사소개";
+}
+
+<section class="hero-section" style="min-height:300px; background-image:url('/images/upload/back7.jpg');">
+    <div class="hero-overlay d-flex align-items-center justify-content-center">
+        <div class="hero-content text-center">
+            <h1 class="display-4 font-weight-bold mb-3">Questhouse(주)</h1>
+            <p class="lead mb-0">디지털 혁신을 선도하는 IT 솔루션 기업</p>
+        </div>
+    </div>
+</section>
+
+<section class="about-section py-5">
+    <div class="container">
+        <h2 class="section-title text-dark">회사 개요</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="~/images/back5.jpg"
+                     alt="회사 전경"
+                     class="img-fluid rounded-lg shadow-sm" />
+            </div>
+            <div class="col-md-6">
+                <p class="text-muted mb-3">
+                    Questhouse(주)는 2018년 설립 이래,
+                    스마트그리드·디지털변전소용 H/W·S/W 솔루션 분야에서
+                    축적된 노하우를 바탕으로 차별화된 서비스를 제공합니다.
+                </p>
+                <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item">설립연도: 2018년</li>
+                    <li class="list-group-item">본사 위치: 대전광역시 유성구 테그노 1로75</li>
+                  
+                </ul>
+                <a href="#business-areas" class="btn btn-outline-primary">
+                    사업 분야 보기 →
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     ★ 사업 분야 섹션 (카드형 그리드)
+     ============================== -->
+<section id="business-areas" class="about-section py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title text-dark text-center mb-4">사업 분야</h2>
+        <div class="icon-grid">
+            <div class="icon-card">
+                <div class="icon">🔋</div>
+                <h5>스마트그리드 & 디지털변전소 장비 개발</h5>
+                <p>전력망을 혁신하는 H/W 솔루션</p>
+            </div>
+            <div class="icon-card">
+                <div class="icon">🔄</div>
+                <h5>프로토콜 변환 소프트웨어 (SA)</h5>
+                <p>IEC61850, DNP3, Modbus 등 지원</p>
+            </div>
+            <div class="icon-card">
+                <div class="icon">⚙️</div>
+                <h5>H/W 제작 & System Integration</h5>
+                <p>맞춤형 H/W 설계 및 구축</p>
+            </div>
+            <div class="icon-card">
+                <div class="icon">📷</div>
+                <h5>AI 기반 영상처리 & 카메라</h5>
+                <p>스마트 검측·분석 S/W 개발</p>
+            </div>
+            <div class="icon-card">
+                <div class="icon">🔗</div>
+                <h5>Fail-Over & Redundancy 시스템</h5>
+                <p>무중단 서비스를 위한 복원력</p>
+            </div>
+            <div class="icon-card">
+                <div class="icon">⏱️</div>
+                <h5>시뮬레이션 & 실시간 S/W</h5>
+                <p>실시간 제어·모사 환경 제공</p>
+            </div>
+            <div class="icon-card">
+                <div class="icon">💻</div>
+                <h5>산업용 스위치·컴퓨터 솔루션</h5>
+                <p>견고하고 안정적인 시스템</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==============================
+     ★ 보유 기술 섹션 (카드형 그리드)
+     ============================== -->
+<section id="technologies" class="about-section py-5">
+    <div class="container">
+        <h2 class="section-title text-dark text-center mb-4">보유 기술</h2>
+        <div class="icon-grid">
+            <div class="icon-card">
+                <div class="icon">🛠️</div>
+                <h5>H/W 설계 및 제작</h5>
+                <p>Custom PCB·Embedded 시스템</p>
+            </div>
+            <div class="icon-card">
+                <div class="icon">💽</div>
+                <h5>소프트웨어 개발</h5>
+                <p>Windows, Linux, VxWorks</p>
+            </div>
+            <div class="icon-card">
+                <div class="icon">🔌</div>
+                <h5>산업용 프로토콜 처리</h5>
+                <p>IEC61850, DNP3, Modbus 등</p>
+            </div>
+            <div class="icon-card">
+                <div class="icon">🌐</div>
+                <h5>Web 서비스 & HMI</h5>
+                <p>사용자 경험 중심 UI/UX</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 text-center">
+    <div class="container">
+        <h3 class="mb-4">대표이사 인사말</h3>
+        <blockquote class="blockquote">
+            <p class="mb-0">
+                “Challenge & Creativity로 고객에게 최고의 만족을 드리는
+                Questhouse가 되겠습니다.”
+            </p>
+            <footer class="blockquote-footer mt-2">
+                민현기, <cite title="Source Title">Questhouse(주) 대표이사</cite>
+            </footer>
+        </blockquote>
+    </div>
+</section>

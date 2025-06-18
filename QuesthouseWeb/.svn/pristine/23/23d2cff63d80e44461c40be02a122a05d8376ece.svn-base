@@ -1,0 +1,49 @@
+﻿@model QuesthouseWeb.Models.Product
+
+@{
+    ViewData["Title"] = "제품 상세";
+}
+
+<div class="container py-5">
+    <!-- 제목 & 메타 -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">@Model.Name</h1>
+        <p class="text-muted small">
+            등록일: @Model.Created
+
+
+        </p>
+    </div>
+
+    <!-- 본문 카드 -->
+    <div class="card shadow-sm mb-5">
+        <div class="card-body fs-5" style="line-height:1.8;">
+            @Html.Raw(Model.Desc)
+        </div>
+    </div>
+
+    <!-- 목록 버튼 -->
+    <div class="text-center">
+        <a asp-action="Index" asp-controller="Product" class="btn btn-outline-primary px-4">
+            목록으로 돌아가기
+        </a>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        /* 카드 내부 텍스트 과도한 줄간 조정 */
+        .card-body {
+            font-size: 1rem;
+        }
+        /* 이전/다음 제목 줄넘침 방지 */
+        .d-flex > a {
+            max-width: 45%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+        }
+    </style>
+}
+@* <a href="/Product/Index" class="back-button">← 목록으로 돌아가기</a> *@

@@ -1,0 +1,51 @@
+﻿@model QuesthouseWeb.Models.ViewModels.ProductListViewModel
+
+
+@{
+    ViewData["Title"] = "제품 관리";
+}
+
+<div class="header mb-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">제품 목록</h1>
+    <a href="/Admin/Create" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">+ 새 제품 등록</a>
+</div>
+
+<table class="w-full table-auto border-collapse bg-white shadow rounded">
+    <thead>
+        <tr class="bg-gray-100 text-left">
+            <th class="p-3 border-b">ID</th>
+            <th class="p-3 border-b">제품명</th>
+            <th class="p-3 border-b">수정 / 삭제</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Items)
+        {
+            <tr class="hover:bg-gray-50">
+                <td class="p-3 border-b">@product.Id</td>
+                <td class="p-3 border-b">@product.Name</td>
+                <td class="p-3 border-b">
+                    <a asp-controller="product" asp-action="Edit" class="text-blue-500 hover:underline mr-3">수정</a>
+                    <button onclick="deleteProduct(@product.Id)" class="text-red-500 hover:underline">삭제</button>
+                    <script>
+                        async function deleteProduct(id) {
+                            const confirmed = confirm("정말 삭제하시겠습니까?");
+                            if (!confirmed) return;
+
+                            const response = await fetch(`/api/products/${id}`, {
+                                method: 'DELETE'
+                            });
+
+                            if (response.ok) {
+                                alert("삭제되었습니다.");
+                                location.reload();
+                            } else {
+                                alert("삭제 실패");
+                            }
+                        }
+                    </script>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

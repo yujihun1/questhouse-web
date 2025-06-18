@@ -1,0 +1,102 @@
+﻿@model QuesthouseWeb.Models.Product
+
+@{
+    ViewData["Title"] = "제품 상세";
+}
+
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+        background-color: #ffffff;
+        color: #111;
+    }
+
+    .post-wrapper {
+        max-width: 720px;
+        margin: 100px auto;
+        padding: 0 24px;
+    }
+
+    .post-image {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 48px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+
+    .post-title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        line-height: 1.4;
+    }
+
+    .post-meta {
+        font-size: 0.95rem;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    .post-section {
+        margin-bottom: 24px;
+        font-size: 1.125rem;
+        line-height: 1.8;
+    }
+
+        .post-section strong {
+            display: inline-block;
+            width: 100px;
+            color: #555;
+            font-weight: 500;
+        }
+
+    .post-desc {
+        margin-top: 48px;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        color: #222;
+        white-space: pre-wrap;
+    }
+
+    .back-button {
+        display: inline-block;
+        margin-top: 48px;
+        font-size: 1rem;
+        padding: 10px 20px;
+        background-color: #f2f2f2;
+        color: #333;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background-color 0.2s ease;
+    }
+
+        .back-button:hover {
+            background-color: #e0e0e0;
+        }
+</style>
+
+<div class="post-wrapper">
+    @* 썸네일 이미지 (있을 때만 보여줌)*@
+    
+    <script>
+        console.log(@Model.Photo_id);
+    </script>
+
+    @if (Model.Photo_id > 0 && Model.Photo != null)
+    {
+        <img src="@Model.Photo.Photo_path" alt="제품 이미지" class="post-image" />
+    }
+
+    <div class="post-title">@Model.Name</div>
+
+    <div class="post-meta">
+        등록일: @Model.Created | 구분: @Model.ProductClass?.Div_nm | 작성자: @Model.User_id
+    </div>
+
+    <div class="post-desc">
+        @Html.Raw(Model.Desc)
+    </div>
+
+    <a href="/Product/Index" class="back-button">← 목록으로 돌아가기</a>
+</div>

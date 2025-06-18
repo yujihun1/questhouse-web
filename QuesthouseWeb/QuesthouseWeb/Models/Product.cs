@@ -1,0 +1,36 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace QuesthouseWeb.Models
+{
+    [Table("Product")]
+    public class Product
+    {
+        [Required]
+        public int Id { get; set; }
+
+        [Required(ErrorMessage = "제목은 필수 입력 항목입니다.")]
+        public string Name { get; set; }
+
+        [Required]
+        public string Desc { get; set; }
+
+        [Required]
+        public string Created { get; set; }
+
+        [Required(ErrorMessage = "제품 구분을 선택하세요.")]
+        public int Div_id { get; set; }
+        
+        public int? Photo_id { get; set; }
+
+        [Required]
+        public string User_id { get; set; }
+
+		[ForeignKey("Div_id")]
+		public ProductClass ProductClass { get; set; }
+
+        [ForeignKey("Photo_id")]
+        public Photo Photo { get; set; }
+
+	}
+}

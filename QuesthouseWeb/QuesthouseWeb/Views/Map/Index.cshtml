@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "오시는 길";
+    ViewData["UseVanta"] = true;
+
+}
+
+<link rel="stylesheet" href="~/css/map.css" />
+<section class="hero-section" id="hero-bg" style="min-height:300px;">
+    <div class="hero-overlay d-flex align-items-center justify-content-center">
+        <div class="hero-content text-center">
+            <h1 class="display-4 font-weight-bold mb-3">오시는 길</h1>
+        </div>
+    </div>
+</section>
+
+<section class="map-page">
+    <div class="map-container">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.912345678!2d127.395621!3d36.428409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca06dd44fa1b1%3A0x123456abcdef!2sQuesthouse!5e0!3m2!1sko!2skr!4v1620000000000!5m2!1sko!2skr"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+            </iframe>
+        </div>
+        <div class="divider"></div>
+        <p class="address">
+            📍 대전 유성구 테크노1로 75<br />
+            한밭대학교 대덕산학융합캠퍼스 104호
+        </p>
+    </div>
+</section>

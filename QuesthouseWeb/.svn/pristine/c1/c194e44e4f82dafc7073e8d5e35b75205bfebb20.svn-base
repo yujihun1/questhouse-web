@@ -1,0 +1,264 @@
+﻿@model QuesthouseWeb.Models.ViewModels.ProductListViewModel
+
+@{
+    ViewData["Title"] = "제품 소개";
+}
+
+<style>
+    body {
+        background-color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+        color: #111;
+    }
+
+    .page-title {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #111;
+    }
+
+    .category-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin: 40px auto 20px;
+        border-bottom: 1px solid #e0e0e0;
+        max-width: 800px;
+    }
+
+    .category-tab {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 12px 16px;
+        cursor: pointer;
+        color: #888;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+        .category-tab:hover {
+            color: #0d47a1;
+        }
+
+        .category-tab.active {
+            color: #0d47a1;
+            border-bottom: 3px solid #0d47a1;
+            text-decoration: none;
+        }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(3, 240px);
+        gap: 32px;
+        justify-content: center;
+        padding: 40px 20px 20px;
+        background-color: #fff;
+    }
+
+    .product-item {
+        width: 240px;
+        border: 1px solid #eee;
+        border-radius: 16px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-sizing: border-box;
+    }
+
+        .product-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+    .product-item-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .product-info {
+        padding: 16px;
+        text-align: center;
+    }
+
+    .product-name {
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+        color: #111;
+    }
+
+    .product-created {
+        font-size: 0.85rem;
+        color: #888;
+    }
+
+    .pagination {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+        .pagination a,
+        .pagination span {
+            margin: 0 4px;
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            text-decoration: none;
+        }
+
+        .pagination a {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+            .pagination a:hover {
+                background-color: #e0e0e0;
+            }
+
+        .pagination .active-page {
+            background-color: #1a237e;
+            color: white;
+            font-weight: bold;
+        }
+
+
+    .pagination-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        gap: 8px;
+    }
+
+        .pagination-wrapper .page-button {
+            padding: 8px 14px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: white;
+            color: #333;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+            .pagination-wrapper .page-button:hover {
+                background-color: #eeeeee;
+            }
+
+            .pagination-wrapper .page-button.active {
+                background-color: #0d47a1;
+                color: white;
+                border-color: #0d47a1;
+                font-weight: bold;
+            }
+
+            .pagination-wrapper .page-button.disabled {
+                pointer-events: none;
+                color: #aaa;
+                border-color: #eee;
+                background-color: #f8f8f8;
+            }
+</style>
+
+<section class="hero-section" style="min-height:300px; background-image:url('/images/upload/back7.jpg');">
+    <div class="hero-overlay d-flex align-items-center justify-content-center">
+        <div class="hero-content text-center">
+            <h1 class="display-4 font-weight-bold mb-3">제품 소개</h1>
+        </div>
+    </div>
+</section>
+
+<div class="category-tabs">
+    <a class="category-tab @(Model.SelectedCategoryId == null ? "active" : "")"
+       asp-action="Index"
+       asp-route-categoryId=""
+       asp-route-page="1">전체</a>
+
+    <a class="category-tab @(Model.SelectedCategoryId == 1 ? "active" : "")"
+       asp-action="Index"
+       asp-route-categoryId="1"
+       asp-route-page="1">하드웨어</a>
+
+    <a class="category-tab @(Model.SelectedCategoryId == 2 ? "active" : "")"
+       asp-action="Index"
+       asp-route-categoryId="2"
+       asp-route-page="1">소프트웨어</a>
+
+    <a class="category-tab @(Model.SelectedCategoryId == 3 ? "active" : "")"
+       asp-action="Index"
+       asp-route-categoryId="3"
+       asp-route-page="1">기타</a>
+</div>
+
+<div class="product-list">
+    @foreach (var product in Model.Items)
+    {
+        <a asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id"
+           class="product-item-link product-entry" data-category="@product.Div_id">
+            <div class="product-item">
+                <img class="product-img"
+                     src="@Url.Content(product.Photo != null ? $"{product.Photo.Photo_path}" : "~/images/default.jpg")"
+                     alt="@product.Name 이미지"
+                     onerror="this.onerror=null; this.src='/images/default.png';" />
+
+
+                <div class="product-info">
+                    <div class="product-name">@product.Name</div>
+                    <div class="product-created">@product.Created</div>
+                </div>
+            </div>
+        </a>
+    }
+</div>
+
+<div class="pagination-wrapper">
+    @if (Model.HasPreviousPage)
+    {
+        <a asp-action="Index"
+           asp-route-page="@(Model.Page - 1)"
+           asp-route-categoryId="@Model.SelectedCategoryId"
+           class="page-button">이전</a>
+    }
+    else
+    {
+        <span class="page-button disabled">이전</span>
+    }
+
+    @for (int i = 1; i <= Model.TotalPages; i++)
+    {
+        if (i == Model.Page)
+        {
+            <span class="page-button active">@i</span>
+        }
+        else
+        {
+            <a asp-action="Index"
+               asp-route-page="@i"
+               asp-route-categoryId="@Model.SelectedCategoryId"
+               class="page-button">@i</a>
+        }
+    }
+
+    @if (Model.HasNextPage)
+    {
+        <a asp-action="Index"
+           asp-route-page="@(Model.Page + 1)"
+           asp-route-categoryId="@Model.SelectedCategoryId"
+           class="page-button">다음</a>
+    }
+    else
+    {
+        <span class="page-button disabled">다음</span>
+    }
+</div>

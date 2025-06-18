@@ -1,0 +1,88 @@
+﻿@model QuesthouseWeb.Models.ViewModels.NewsListViewModel
+
+@{
+    Layout = "_AdminLayout"; // 기본 레이아웃 설정
+}
+
+<link rel="stylesheet" href="~/css/admin.css" />
+
+<div class="notice-container">
+    <div class="notice-header">
+        <h1 class="notice-title">공지사항 목록</h1>
+        <a asp-controller="News" asp-action="Add" class="add-button">+ 새 제품 등록</a>
+    </div>
+
+    <table class="notice-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>제목</th>
+                <th>관리</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var index = 1 + (Model.CurrentPage - 1) * Model.PageSize; // 페이지당 번호 보정
+            }
+
+            @foreach (var news in Model.NewsItems)
+            {
+                <tr>
+                    <td>@index</td>
+                    <td>
+                        <a asp-controller="News"
+                           asp-action="Detail"
+                           asp-route-id="@news.Id"
+                           class="no-underline">
+                            @news.Title
+                        </a>
+                    </td>
+
+                    <td>
+                        <a asp-controller="News" asp-action="Edit" asp-route-id="@news.Id" class="action-link">수정</a>
+                        <button onclick="deleteNews(@news.Id)" class="delete-button">삭제</button>
+                    </td>
+                </tr>
+                index++;
+            }
+        </tbody>
+    </table>
+</div>
+
+@if (Model.TotalItems > Model.PageSize)
+{
+    var totalPages = (int)Math.Ceiling((double)Model.TotalItems / Model.PageSize);
+    <nav class="pagination-container">
+        @for (int i = 1; i <= totalPages; i++)
+        {
+            if (i == Model.CurrentPage)
+            {
+                <span class="pagination-current">@i</span>
+            }
+            else
+            {
+                <a asp-controller="Admin" asp-action="news" asp-route-page="@i" asp-route-pageSize="@Model.PageSize" class="pagination-link">@i</a>
+            }
+        }
+    </nav>
+}
+
+
+@section Scripts {
+    <script>
+        async function deleteNews(id) {
+            if (!confirm("정말 삭제하시겠습니까?")) return;
+
+            const response = await fetch(`/api/news/${id}`, {
+                method: 'DELETE'
+            });
+
+            if (response.ok) {
+                alert("삭제되었습니다.");
+                location.reload();
+            } else {
+                alert("삭제 실패");
+            }
+        }
+    </script>
+}

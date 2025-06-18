@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "문의 완료";
+}
+
+<section class="thankyou-section py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body text-center p-5">
+                        <!-- 성공 아이콘 (Bootstrap 글리프 대신 SVG 체크 모양 사용) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" fill="#00b894" class="mb-4 bi bi-check-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z" />
+                            <path d="M10.97 5.97a.235.235 0 010 .323l-3.992 4.99a.235.235 0 01-.332.02L4.324 9.384a.235.235 0 01.02-.332l.772-.772a.235.235 0 01.332-.02l1.694 1.521 3.356-4.19a.235.235 0 01.491.047z" />
+                        </svg>
+
+                        <h1 class="card-title display-5 mb-3 text-dark">문의가 정상적으로 접수되었습니다.</h1>
+                        <p class="card-text lead mb-4 text-secondary">
+                            빠른 시일 내에 회신 드리겠습니다. 감사합니다.
+                        </p>
+                        <a href="/" class="btn btn-primary btn-lg px-4 py-2">
+                            메인으로 돌아가기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

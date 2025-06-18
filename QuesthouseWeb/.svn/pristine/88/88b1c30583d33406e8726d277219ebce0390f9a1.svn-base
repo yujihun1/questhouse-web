@@ -1,0 +1,57 @@
+﻿@model IEnumerable<QuesthouseWeb.Models.News>
+
+@{
+    ViewData["Title"] = "공지사항";
+}
+
+<div class="container py-5">
+    <h2 class="mb-4 font-weight-bold">뉴스룸</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="text-center text-muted">등록된 공지사항이 없습니다.</div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <!-- 썸네일 관련 코드 삭제 또는 주석 처리 -->
+                        @* 
+                        <a href="@Url.Action("Details", "Bbs", new { id = item.Id })">
+                            <img src="@(item.ThumbnailUrl ?? "/images/default-news.jpg")"
+                                 class="card-img-top" alt="@item.Title" style="object-fit: cover; height: 180px;" />
+                        </a>
+                        *@
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="@Url.Action("Detail", "Bbs", new { id = item.Id })"
+                                   class="text-dark text-decoration-none">
+                                    @item.Title
+                                </a>
+                            </h5>
+                            <p class="text-muted small mb-2">@item.Created.ToString("yyyy-MM-dd")</p>
+
+                            <!-- 태그 관련 코드 삭제 또는 주석 처리 -->
+                            @*
+                            @if (!string.IsNullOrEmpty(item.Tags))
+                            {
+                                var tags = item.Tags.Split(',', StringSplitOptions.RemoveEmptyEntries);
+                                <div class="mb-2">
+                                    @foreach (var tag in tags)
+                                    {
+                                        <span class="badge badge-light mr-1" style="font-size:0.75rem;">#@tag</span>
+                                    }
+                                </div>
+                            } 
+                            *@
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

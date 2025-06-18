@@ -1,0 +1,25 @@
+﻿@model IEnumerable<QuesthouseWeb.Models.News> // 모델 타입 지정
+
+@{
+    // 레이아웃 사용 여부 등 설정 (기존 설정 유지)
+}
+
+<table class="table table-striped table-hover table-bordered">
+    <thead>
+        <tr>
+            <th>제목</th>
+            <th>작성일자</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var News in Model)
+        {
+            <tr>
+                <td><a asp-controller="News" asp-action="Detail" asp-route-Id="@News.Id">@News.Title</a></td>
+                <td>@News.Created</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/News/add" class="btn btn-warning">게시물 작성</a>
